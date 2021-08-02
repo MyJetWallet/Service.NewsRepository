@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "OBcvxXUTDVxDoGgOPy+tYI+ACT2tLsCrg/FCotJ2uE+Sa9WBXBtY7L6HsjSDgIsPOkQjNQtXqxcCy+fK1sqDEQ==",
+  "success": true,
+  "projectFilePath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj",
+  "expectedPackageFiles": [
+    "/Users/pavelp/.nuget/packages/flurl/3.0.1/flurl.3.0.1.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/flurl.http/3.0.1/flurl.http.3.0.1.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/mynosqlserver.datawriter/1.3.1/mynosqlserver.datawriter.1.3.1.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.private.servicemodel/4.8.1/system.private.servicemodel.4.8.1.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.reflection.dispatchproxy/4.7.1/system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.security.accesscontrol/4.7.0/system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.security.cryptography.cng/4.7.0/system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.security.cryptography.pkcs/4.7.0/system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.security.cryptography.xml/4.7.0/system.security.cryptography.xml.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.servicemodel.primitives/4.8.1/system.servicemodel.primitives.4.8.1.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.text.encoding.codepages/4.5.1/system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/Users/pavelp/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

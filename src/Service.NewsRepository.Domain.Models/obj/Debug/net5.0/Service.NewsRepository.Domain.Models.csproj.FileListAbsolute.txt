@@ -1,0 +1,12 @@
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/bin/Debug/net5.0/Service.NewsRepository.Domain.Models.deps.json
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/bin/Debug/net5.0/Service.NewsRepository.Domain.Models.dll
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/bin/Debug/net5.0/ref/Service.NewsRepository.Domain.Models.dll
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/bin/Debug/net5.0/Service.NewsRepository.Domain.Models.pdb
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/Service.NewsRepository.Domain.Models.csproj.AssemblyReference.cache
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/Service.NewsRepository.Domain.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/Service.NewsRepository.Domain.Models.AssemblyInfoInputs.cache
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/Service.NewsRepository.Domain.Models.AssemblyInfo.cs
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/Service.NewsRepository.Domain.Models.csproj.CoreCompileInputs.cache
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/Service.NewsRepository.Domain.Models.dll
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/ref/Service.NewsRepository.Domain.Models.dll
+/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/Debug/net5.0/Service.NewsRepository.Domain.Models.pdb
