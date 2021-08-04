@@ -30,10 +30,10 @@ namespace Service.NewsRepository.Services
             var news = data.Select(n => n.News);
 
             if (!string.IsNullOrWhiteSpace(request.Asset))
-                news = news.Where(t=>!t.AssociatedAssets.Any() || t.AssociatedAssets.Contains(request.Asset));
+                news = news.Where(t=>!t.AssociatedAssets.Any() || t.AssociatedAssets.Contains(request.Asset.ToUpper()));
             
             if (!string.IsNullOrWhiteSpace(request.Lang))
-               news = news.Where(t => t.Lang == request.Lang);
+               news = news.Where(t => t.Lang == request.Lang.ToLower());
 
             return new NewsListResponse()
             {
@@ -41,12 +41,17 @@ namespace Service.NewsRepository.Services
             };        
         }
 
-        public async Task AddOrUpdateNews(News request) => await _newsWriter.InsertOrReplaceAsync(NewsNoSqlEntity.Create(request));
-        
+        public async Task AddOrUpdateNews(News request)
+        {
+            request.Lang = request.Lang.ToLower();
+            request.AssociatedAssets = request.AssociatedAssets.Select(asset => asset.ToUpper()).ToList();
+            await _newsWriter.InsertOrReplaceAsync(NewsNoSqlEntity.Create(request));
+        }
+
         public async Task DeleteNews(DeleteNewsRequest request)
         {
             await _newsWriter.DeleteAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Topic),
-                NewsNoSqlEntity.GenerateRowKey(request.Lang));
+                NewsNoSqlEntity.GenerateRowKey(request.Lang.ToLower()));
         }
     }
 }
