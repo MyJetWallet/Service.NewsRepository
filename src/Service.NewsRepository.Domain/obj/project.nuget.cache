@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0RbGEQehuAXfQtPx9gyxlXDkhrpsiE8nwgI0SOItuYsmhcPsezn3/VKAHDxS7dKCiHOmEBPCiP4wO3VF6Qk2MA==",
+  "dgSpecHash": "asZkJRqPeiJoeRriGnvuNXC/YXdfWKPPvw3OxR74sM7NTOL/2qIusmWpzt0p07j5T/4JUHwt8VNEMUO5Gc3xfQ==",
   "success": true,
-  "projectFilePath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj",
+  "projectFilePath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -27,7 +27,7 @@
           "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
-      "DotNetCoreDecorators/1.0.20": {
+      "DotNetCoreDecorators/1.0.21": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/DotNetCoreDecorators.dll": {}
@@ -50,7 +50,7 @@
           "lib/netstandard2.1/Elasticsearch.Net.dll": {}
         }
       },
-      "Flurl/3.0.1": {
+      "Flurl/3.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Flurl.dll": {}
@@ -59,10 +59,10 @@
           "lib/netstandard2.0/Flurl.dll": {}
         }
       },
-      "Flurl.Http/3.0.1": {
+      "Flurl.Http/3.2.0": {
         "type": "package",
         "dependencies": {
-          "Flurl": "3.0.1",
+          "Flurl": "3.0.2",
           "Newtonsoft.Json": "12.0.2",
           "System.Text.Encoding.CodePages": "4.5.1"
         },
@@ -227,7 +227,7 @@
           "build/Grpc.Tools.targets": {}
         }
       },
-      "JetBrains.Annotations/2021.1.0": {
+      "JetBrains.Annotations/2021.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
@@ -581,12 +581,12 @@
           "lib/netstandard2.0/MyJetWallet.Sdk.GrpcMetrics.dll": {}
         }
       },
-      "MyJetWallet.Sdk.GrpcSchema/1.0.5": {
+      "MyJetWallet.Sdk.GrpcSchema/1.0.6": {
         "type": "package",
         "dependencies": {
           "System.ServiceModel.Primitives": "4.8.1",
-          "protobuf-net.Grpc.AspNetCore": "1.0.147",
-          "protobuf-net.Grpc.Reflection": "1.0.147"
+          "protobuf-net.Grpc.AspNetCore": "1.0.152",
+          "protobuf-net.Grpc.Reflection": "1.0.152"
         },
         "compile": {
           "lib/net5.0/MyJetWallet.Sdk.GrpcSchema.dll": {}
@@ -649,7 +649,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "MyJetYamlParser/1.1.0": {
+      "MyJetYamlParser/1.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MyYamlParser.dll": {}
@@ -690,12 +690,12 @@
           "lib/net5.0/MyNoSqlServer.DataWriter.dll": {}
         }
       },
-      "MySettingsReader/1.2.0": {
+      "MySettingsReader/1.2.1": {
         "type": "package",
         "dependencies": {
-          "DotNetCoreDecorators": "1.0.20",
-          "Flurl.Http": "3.0.1",
-          "MyJetYamlParser": "1.1.0"
+          "DotNetCoreDecorators": "1.0.21",
+          "Flurl.Http": "3.2.0",
+          "MyJetYamlParser": "1.1.1"
         },
         "compile": {
           "lib/netstandard2.1/MySettingsReader.dll": {}
@@ -815,7 +815,7 @@
           "lib/netstandard2.0/OpenTelemetry.Instrumentation.Http.dll": {}
         }
       },
-      "prometheus-net/4.1.1": {
+      "prometheus-net/4.2.0": {
         "type": "package",
         "compile": {
           "lib/netcoreapp2.1/Prometheus.NetCore.dll": {},
@@ -826,22 +826,25 @@
           "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {}
         }
       },
-      "prometheus-net.AspNetCore/4.1.1": {
+      "prometheus-net.AspNetCore/4.2.0": {
         "type": "package",
         "dependencies": {
-          "prometheus-net": "4.1.1"
+          "prometheus-net": "4.2.0"
         },
         "compile": {
           "lib/netcoreapp3.1/Prometheus.AspNetCore.dll": {}
         },
         "runtime": {
           "lib/netcoreapp3.1/Prometheus.AspNetCore.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
-      "protobuf-net/3.0.73": {
+      "protobuf-net/3.0.101": {
         "type": "package",
         "dependencies": {
-          "protobuf-net.Core": "3.0.73"
+          "protobuf-net.Core": "3.0.101"
         },
         "compile": {
           "lib/net5.0/protobuf-net.dll": {}
@@ -850,7 +853,7 @@
           "lib/net5.0/protobuf-net.dll": {}
         }
       },
-      "protobuf-net.Core/3.0.73": {
+      "protobuf-net.Core/3.0.101": {
         "type": "package",
         "compile": {
           "lib/net5.0/protobuf-net.Core.dll": {}
@@ -885,13 +888,13 @@
           "lib/net5.0/protobuf-net.Grpc.AspNetCore.dll": {}
         }
       },
-      "protobuf-net.Grpc.Reflection/1.0.147": {
+      "protobuf-net.Grpc.Reflection/1.0.152": {
         "type": "package",
         "dependencies": {
-          "protobuf-net": "3.0.73",
-          "protobuf-net.Core": "3.0.73",
-          "protobuf-net.Grpc": "1.0.147",
-          "protobuf-net.Reflection": "3.0.73"
+          "protobuf-net": "3.0.101",
+          "protobuf-net.Core": "3.0.101",
+          "protobuf-net.Grpc": "1.0.152",
+          "protobuf-net.Reflection": "3.0.101"
         },
         "compile": {
           "lib/net5.0/protobuf-net.Grpc.Reflection.dll": {}
@@ -900,10 +903,10 @@
           "lib/net5.0/protobuf-net.Grpc.Reflection.dll": {}
         }
       },
-      "protobuf-net.Reflection/3.0.73": {
+      "protobuf-net.Reflection/3.0.101": {
         "type": "package",
         "dependencies": {
-          "protobuf-net.Core": "3.0.73"
+          "protobuf-net.Core": "3.0.101"
         },
         "compile": {
           "lib/netstandard2.0/protobuf-net.Reflection.dll": {}
@@ -1996,14 +1999,14 @@
         "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.xml"
       ]
     },
-    "DotNetCoreDecorators/1.0.20": {
-      "sha512": "EmWV27Y6NrEK3S9d4waU093EwaO9H9Cj+/iz/3u0skFbtFm0+AA7h7qjClY85zujAlqEQFiPoWgEYChIkKaHsA==",
+    "DotNetCoreDecorators/1.0.21": {
+      "sha512": "ixmvlqe0qs9k5AlzeTldzfQoRBSVaGvscHCtpLco+hlUSbGKpIgjz7Z+WgepZ3GOHEQUXsuwWfbF4AIJ1VmfFQ==",
       "type": "package",
-      "path": "dotnetcoredecorators/1.0.20",
+      "path": "dotnetcoredecorators/1.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dotnetcoredecorators.1.0.20.nupkg.sha512",
+        "dotnetcoredecorators.1.0.21.nupkg.sha512",
         "dotnetcoredecorators.nuspec",
         "lib/netstandard2.1/DotNetCoreDecorators.dll"
       ]
@@ -2030,37 +2033,43 @@
         "nuget-icon.png"
       ]
     },
-    "Flurl/3.0.1": {
-      "sha512": "i7CuPSikVroBaWG8sPvO707Ex9C6BP5+r4JufKNU1FGMmiFgLJvNo1ttUg6ZiXIzUNknvIb1VUTIO9iEDucibg==",
+    "Flurl/3.0.2": {
+      "sha512": "1/6mqdzGCTdAekbWkVZBTylCV+8g3JUSTXRBngRVR274S+RsAYNRF79GbDoDsPfMKu8VPc9HkQWdBEAncK1PQQ==",
       "type": "package",
-      "path": "flurl/3.0.1",
+      "path": "flurl/3.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "flurl.3.0.1.nupkg.sha512",
+        "flurl.3.0.2.nupkg.sha512",
         "flurl.nuspec",
         "icon.png",
         "lib/net461/Flurl.dll",
         "lib/net461/Flurl.pdb",
         "lib/net461/Flurl.xml",
+        "lib/net472/Flurl.dll",
+        "lib/net472/Flurl.pdb",
+        "lib/net472/Flurl.xml",
         "lib/netstandard2.0/Flurl.dll",
         "lib/netstandard2.0/Flurl.pdb",
         "lib/netstandard2.0/Flurl.xml"
       ]
     },
-    "Flurl.Http/3.0.1": {
-      "sha512": "wt4RrmYOPWu8v0sjuuSfhYBFzjfrCz4nJP48Kw2HFGssq0U6pMBPFHcL3zbsBFALJipAjgRET5mf+0Xz4ZnZpQ==",
+    "Flurl.Http/3.2.0": {
+      "sha512": "5S8YiJm5CyRFO418GG9PDrsgmGEaZJtZLUqk3xqBKrfx7W9eKtOSpeji/GwAL+tSgNTALKBPvBKTaT4S83Oo+w==",
       "type": "package",
-      "path": "flurl.http/3.0.1",
+      "path": "flurl.http/3.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "flurl.http.3.0.1.nupkg.sha512",
+        "flurl.http.3.2.0.nupkg.sha512",
         "flurl.http.nuspec",
         "icon.png",
         "lib/net461/Flurl.Http.dll",
         "lib/net461/Flurl.Http.pdb",
         "lib/net461/Flurl.xml",
+        "lib/net472/Flurl.Http.dll",
+        "lib/net472/Flurl.Http.pdb",
+        "lib/net472/Flurl.xml",
         "lib/netstandard2.0/Flurl.Http.dll",
         "lib/netstandard2.0/Flurl.Http.pdb",
         "lib/netstandard2.0/Flurl.xml"
@@ -2301,15 +2310,15 @@
         "tools/windows_x86/protoc.exe"
       ]
     },
-    "JetBrains.Annotations/2021.1.0": {
-      "sha512": "n9JSw5Z+F+6gp9vSv4aLH6p/bx3GAYA6FZVq1wJq/TJySv/kPgFKLGFeS7A8Xa5X4/GWorh5gd43yjamUgnBNA==",
+    "JetBrains.Annotations/2021.2.0": {
+      "sha512": "kKSyoVfndMriKHLfYGmr0uzQuI4jcc3TKGyww7buJFCYeHb/X0kodYBPL7n9454q7v6ASiRmDgpPGaDGerg/Hg==",
       "type": "package",
-      "path": "jetbrains.annotations/2021.1.0",
+      "path": "jetbrains.annotations/2021.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "jetbrains.annotations.2021.1.0.nupkg.sha512",
+        "jetbrains.annotations.2021.2.0.nupkg.sha512",
         "jetbrains.annotations.nuspec",
         "lib/net20/JetBrains.Annotations.dll",
         "lib/net20/JetBrains.Annotations.xml",
@@ -2831,15 +2840,15 @@
         "myjetwallet.sdk.grpcmetrics.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.GrpcSchema/1.0.5": {
-      "sha512": "EYySm9qfoX4bLxkeotoFALiUzaDC0ABZDPMgnsjTZL71pAFcfG4ATdDl+NcDbMEYoK6XCI/UXerIj3IdLSroig==",
+    "MyJetWallet.Sdk.GrpcSchema/1.0.6": {
+      "sha512": "kICyXH7oIWtw3jInvO9fhde5s7Vxh2l8rDzTucImnWUcHmzwTCghymua7HfNLxa/GlE7GzhdYk0+6iiBN8TdWA==",
       "type": "package",
-      "path": "myjetwallet.sdk.grpcschema/1.0.5",
+      "path": "myjetwallet.sdk.grpcschema/1.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/MyJetWallet.Sdk.GrpcSchema.dll",
-        "myjetwallet.sdk.grpcschema.1.0.5.nupkg.sha512",
+        "myjetwallet.sdk.grpcschema.1.0.6.nupkg.sha512",
         "myjetwallet.sdk.grpcschema.nuspec"
       ]
     },
@@ -2867,15 +2876,15 @@
         "myjetwallet.sdk.service.nuspec"
       ]
     },
-    "MyJetYamlParser/1.1.0": {
-      "sha512": "jODid3T5OFC8TVqVnBmu5X969J+MjsTb6EPWTm/8mFqIp0VAETOP8e4GTnIMwSY+fxlIw3TYZkcpIM55kidKJQ==",
+    "MyJetYamlParser/1.1.1": {
+      "sha512": "8mK/CO9lb8nma+25y3swZELD30KFKpHZM/5Zhha+ksHBrxHL6HDU5km9Kv968jeSVOB2od7Itz0TC0VXUDCr5A==",
       "type": "package",
-      "path": "myjetyamlparser/1.1.0",
+      "path": "myjetyamlparser/1.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.1/MyYamlParser.dll",
-        "myjetyamlparser.1.1.0.nupkg.sha512",
+        "myjetyamlparser.1.1.1.nupkg.sha512",
         "myjetyamlparser.nuspec"
       ]
     },
@@ -2911,15 +2920,15 @@
         "mynosqlserver.datawriter.nuspec"
       ]
     },
-    "MySettingsReader/1.2.0": {
-      "sha512": "Hn83wGu9qFK5IT+pwXZUOpJmCeFLu29AD60m41zbUv3xSJeJ9vtWvXxxCoK0upG+jtnMae4xShPMLi9A5O0PRw==",
+    "MySettingsReader/1.2.1": {
+      "sha512": "jgw2fEtyLer1K5cM6kK42ZdefMKILPp6H9wSNutO6HQl0aeajgvYmL83xILLecQTXdNltUqEQW1vuaRGz6Va3g==",
       "type": "package",
-      "path": "mysettingsreader/1.2.0",
+      "path": "mysettingsreader/1.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.1/MySettingsReader.dll",
-        "mysettingsreader.1.2.0.nupkg.sha512",
+        "mysettingsreader.1.2.1.nupkg.sha512",
         "mysettingsreader.nuspec"
       ]
     },
@@ -3079,10 +3088,10 @@
         "opentelemetry.instrumentation.http.nuspec"
       ]
     },
-    "prometheus-net/4.1.1": {
-      "sha512": "A+z2qxPv+tJOl78yUaQEzyDMap0sjjKL+WVUa+JzXyRQ1ZPtNeDf6qXD+w7tYkVd88GQtnoJ7xDaxluiOM6S8Q==",
+    "prometheus-net/4.2.0": {
+      "sha512": "1u9aEPHnp3qrY9KsJRTZ1FmaBiOxEzEeEuHzmTyEnudd0KKB5KSG9enkEIeyaptFVu/B43pLwLwS1FqF/fXdCg==",
       "type": "package",
-      "path": "prometheus-net/4.1.1",
+      "path": "prometheus-net/4.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3102,14 +3111,14 @@
         "lib/netstandard2.0/Prometheus.NetStandard.dll",
         "lib/netstandard2.0/Prometheus.NetStandard.pdb",
         "lib/netstandard2.0/Prometheus.NetStandard.xml",
-        "prometheus-net.4.1.1.nupkg.sha512",
+        "prometheus-net.4.2.0.nupkg.sha512",
         "prometheus-net.nuspec"
       ]
     },
-    "prometheus-net.AspNetCore/4.1.1": {
-      "sha512": "l9+LcJfVJ9vNbwSuRNqz+/GnfVlVsiWjjDZmrq3BFV2tizX9Emu1u96yKNyYb6H5DKZseC5yMw2/8GJEj1b76Q==",
+    "prometheus-net.AspNetCore/4.2.0": {
+      "sha512": "NRVI8l6UUQcT+pB/NukoGbsSB8/BZ1NQUQiHpnpErwCZ+CjCYHGmu+GTHuIqKgVf3ifn96D2gvRl5N7Q6xLUeQ==",
       "type": "package",
-      "path": "prometheus-net.aspnetcore/4.1.1",
+      "path": "prometheus-net.aspnetcore/4.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3122,14 +3131,14 @@
         "lib/netstandard2.0/Prometheus.AspNetCore.dll",
         "lib/netstandard2.0/Prometheus.AspNetCore.pdb",
         "lib/netstandard2.0/Prometheus.AspNetCore.xml",
-        "prometheus-net.aspnetcore.4.1.1.nupkg.sha512",
+        "prometheus-net.aspnetcore.4.2.0.nupkg.sha512",
         "prometheus-net.aspnetcore.nuspec"
       ]
     },
-    "protobuf-net/3.0.73": {
-      "sha512": "rcqDbIs7bmsctQk7Jo0zAI5BBDyjlKqzGqCHbtlHKRDyJ5AFPBClS3G5KvITS52hSoobUTWW5NsUmB7Dt/0iaA==",
+    "protobuf-net/3.0.101": {
+      "sha512": "mLm8VGfGylp9q+rbJDp3uw0BOeNzfGENecVz/EYGlzq3ss7tfajGXHCMoZm/GxJ9vSn9pcK22UXWZnQ5GJQMjA==",
       "type": "package",
-      "path": "protobuf-net/3.0.73",
+      "path": "protobuf-net/3.0.101",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3143,14 +3152,15 @@
         "lib/netstandard2.0/protobuf-net.xml",
         "lib/netstandard2.1/protobuf-net.dll",
         "lib/netstandard2.1/protobuf-net.xml",
-        "protobuf-net.3.0.73.nupkg.sha512",
-        "protobuf-net.nuspec"
+        "protobuf-net.3.0.101.nupkg.sha512",
+        "protobuf-net.nuspec",
+        "protobuf-net.png"
       ]
     },
-    "protobuf-net.Core/3.0.73": {
-      "sha512": "UKQlQY4STocSar2WoGA2mJegx3E4rTOa+ur2O8YKmhpJII/VfLILkVAF7Cyko2qljFAZ0CuOTy5uNu5JE/ZQ2A==",
+    "protobuf-net.Core/3.0.101": {
+      "sha512": "gf9QIF0RlctfjmOjbE6eOyMulkNEsH7tHncjKj/4BTu9tkuTyrH3fv5I+35GnolJqKJ6fh9kYaezvNRL3t75+Q==",
       "type": "package",
-      "path": "protobuf-net.core/3.0.73",
+      "path": "protobuf-net.core/3.0.101",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3164,8 +3174,9 @@
         "lib/netstandard2.0/protobuf-net.Core.xml",
         "lib/netstandard2.1/protobuf-net.Core.dll",
         "lib/netstandard2.1/protobuf-net.Core.xml",
-        "protobuf-net.core.3.0.73.nupkg.sha512",
-        "protobuf-net.core.nuspec"
+        "protobuf-net.core.3.0.101.nupkg.sha512",
+        "protobuf-net.core.nuspec",
+        "protobuf-net.png"
       ]
     },
     "protobuf-net.Grpc/1.0.152": {
@@ -3204,10 +3215,10 @@
         "protobuf-net.png"
       ]
     },
-    "protobuf-net.Grpc.Reflection/1.0.147": {
-      "sha512": "nqvgkC6fZP2zKK/92eeqEdtdcmwhatVIN1qlGDmUzOw7ywdNLhRsZSde+gDWTcQsReRVZMwDOFELynprpqYFEQ==",
+    "protobuf-net.Grpc.Reflection/1.0.152": {
+      "sha512": "7hzHMu21SpO5ZTO9L3CHEzDEEdHZLlBBNueX1znmxGrGfmQhnCjCfw5YJJsp7VKZ8FTAWLcIzUs/6ocaWBUAtg==",
       "type": "package",
-      "path": "protobuf-net.grpc.reflection/1.0.147",
+      "path": "protobuf-net.grpc.reflection/1.0.152",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3219,14 +3230,15 @@
         "lib/netstandard2.0/protobuf-net.Grpc.Reflection.xml",
         "lib/netstandard2.1/protobuf-net.Grpc.Reflection.dll",
         "lib/netstandard2.1/protobuf-net.Grpc.Reflection.xml",
-        "protobuf-net.grpc.reflection.1.0.147.nupkg.sha512",
-        "protobuf-net.grpc.reflection.nuspec"
+        "protobuf-net.grpc.reflection.1.0.152.nupkg.sha512",
+        "protobuf-net.grpc.reflection.nuspec",
+        "protobuf-net.png"
       ]
     },
-    "protobuf-net.Reflection/3.0.73": {
-      "sha512": "zW5vLljZTyXDF6h0AKaHlYXc7n1pLOQ9AZAWyUnN8IYxlr5Re7vHk4Fpkg76YcBsd47hJLpyduTOIYoQSaNRIg==",
+    "protobuf-net.Reflection/3.0.101": {
+      "sha512": "IEfkT+keLma8vmGkFhv9S7DFx6v2ZSVT68FvyykCiOmXCV6i9R9LniysOKvk2B+u72HCH8eQaOxdLEPslaOanA==",
       "type": "package",
-      "path": "protobuf-net.reflection/3.0.73",
+      "path": "protobuf-net.reflection/3.0.101",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3234,7 +3246,8 @@
         "lib/net461/protobuf-net.Reflection.xml",
         "lib/netstandard2.0/protobuf-net.Reflection.dll",
         "lib/netstandard2.0/protobuf-net.Reflection.xml",
-        "protobuf-net.reflection.3.0.73.nupkg.sha512",
+        "protobuf-net.png",
+        "protobuf-net.reflection.3.0.101.nupkg.sha512",
         "protobuf-net.reflection.nuspec"
       ]
     },
@@ -6351,54 +6364,53 @@
     "net5.0": [
       "Autofac.Extensions.DependencyInjection >= 7.1.0",
       "Grpc.AspNetCore >= 2.38.0",
-      "JetBrains.Annotations >= 2021.1.0",
+      "JetBrains.Annotations >= 2021.2.0",
       "Microsoft.Extensions.Configuration >= 5.0.0",
       "Microsoft.Extensions.Logging >= 5.0.0",
       "MyJetWallet.Sdk.GrpcMetrics >= 2.0.0",
-      "MyJetWallet.Sdk.GrpcSchema >= 1.0.5",
+      "MyJetWallet.Sdk.GrpcSchema >= 1.0.6",
       "MyJetWallet.Sdk.NoSql >= 1.2.0",
       "MyJetWallet.Sdk.Service >= 1.5.5",
-      "MySettingsReader >= 1.2.0",
+      "MySettingsReader >= 1.2.1",
       "Newtonsoft.Json >= 13.0.1",
       "Service.NewsRepository.Domain >= 1.0.0",
       "Service.NewsRepository.Grpc >= 1.0.0",
       "SimpleTrading.BaseMetrics >= 1.0.3",
       "SimpleTrading.ServiceStatusReporterConnector >= 1.0.9",
-      "prometheus-net.AspNetCore >= 4.1.1",
+      "prometheus-net.AspNetCore >= 4.2.0",
       "protobuf-net.Grpc.AspNetCore >= 1.0.152"
     ]
   },
   "packageFolders": {
-    "/Users/pavelp/.nuget/packages/": {}
+    "/home/runner/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
+      "projectUniqueName": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
       "projectName": "Service.NewsRepository",
-      "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
-      "packagesPath": "/Users/pavelp/.nuget/packages/",
-      "outputPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/obj/",
+      "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
+      "packagesPath": "/home/runner/.nuget/packages/",
+      "outputPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/pavelp/.nuget/NuGet/NuGet.Config"
+        "/home/runner/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.pkg.github.com/MyJetWallet/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj": {
-              "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj"
+            "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj": {
+              "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj"
             },
-            "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
-              "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj"
+            "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
+              "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj"
             }
           }
         }
@@ -6423,7 +6435,7 @@
           },
           "JetBrains.Annotations": {
             "target": "Package",
-            "version": "[2021.1.0, )"
+            "version": "[2021.2.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -6439,7 +6451,7 @@
           },
           "MyJetWallet.Sdk.GrpcSchema": {
             "target": "Package",
-            "version": "[1.0.5, )"
+            "version": "[1.0.6, )"
           },
           "MyJetWallet.Sdk.NoSql": {
             "target": "Package",
@@ -6451,7 +6463,7 @@
           },
           "MySettingsReader": {
             "target": "Package",
-            "version": "[1.2.0, )"
+            "version": "[1.2.1, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -6467,7 +6479,7 @@
           },
           "prometheus-net.AspNetCore": {
             "target": "Package",
-            "version": "[4.1.1, )"
+            "version": "[4.2.0, )"
           },
           "protobuf-net.Grpc.AspNetCore": {
             "target": "Package",
@@ -6492,7 +6504,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

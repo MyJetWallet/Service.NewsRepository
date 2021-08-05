@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj": {}
+    "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj": {}
   },
   "projects": {
-    "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj": {
+    "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj",
+        "projectUniqueName": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj",
         "projectName": "Service.NewsRepository.Domain.Models",
-        "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj",
-        "packagesPath": "/Users/pavelp/.nuget/packages/",
-        "outputPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/",
+        "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pavelp/.nuget/NuGet/NuGet.Config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/MyJetWallet/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -59,28 +58,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj": {
+    "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj",
+        "projectUniqueName": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj",
         "projectName": "Service.NewsRepository.Domain",
-        "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj",
-        "packagesPath": "/Users/pavelp/.nuget/packages/",
-        "outputPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/obj/",
+        "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pavelp/.nuget/NuGet/NuGet.Config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/MyJetWallet/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -112,35 +110,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
+    "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj",
+        "projectUniqueName": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj",
         "projectName": "Service.NewsRepository.Grpc",
-        "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj",
-        "packagesPath": "/Users/pavelp/.nuget/packages/",
-        "outputPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/obj/",
+        "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pavelp/.nuget/NuGet/NuGet.Config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/MyJetWallet/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj": {
-                "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj"
+              "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj": {
+                "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain.Models/Service.NewsRepository.Domain.Models.csproj"
               }
             }
           }
@@ -175,38 +172,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj": {
+    "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
+        "projectUniqueName": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
         "projectName": "Service.NewsRepository",
-        "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
-        "packagesPath": "/Users/pavelp/.nuget/packages/",
-        "outputPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository/obj/",
+        "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pavelp/.nuget/NuGet/NuGet.Config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/MyJetWallet/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj": {
-                "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj"
+              "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj": {
+                "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Domain/Service.NewsRepository.Domain.csproj"
               },
-              "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
-                "projectPath": "/Users/pavelp/Documents/GitHub/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj"
+              "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
+                "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj"
               }
             }
           }
@@ -231,7 +227,7 @@
             },
             "JetBrains.Annotations": {
               "target": "Package",
-              "version": "[2021.1.0, )"
+              "version": "[2021.2.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -247,7 +243,7 @@
             },
             "MyJetWallet.Sdk.GrpcSchema": {
               "target": "Package",
-              "version": "[1.0.5, )"
+              "version": "[1.0.6, )"
             },
             "MyJetWallet.Sdk.NoSql": {
               "target": "Package",
@@ -259,7 +255,7 @@
             },
             "MySettingsReader": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.2.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -275,7 +271,7 @@
             },
             "prometheus-net.AspNetCore": {
               "target": "Package",
-              "version": "[4.1.1, )"
+              "version": "[4.2.0, )"
             },
             "protobuf-net.Grpc.AspNetCore": {
               "target": "Package",
@@ -300,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
