@@ -53,7 +53,7 @@
             },
             "Grpc.Core.Api": {
               "target": "Package",
-              "version": "[2.38.0, )"
+              "version": "[2.38.1, )"
             },
             "Grpc.Net.Client": {
               "target": "Package",
@@ -61,7 +61,7 @@
             },
             "JetBrains.Annotations": {
               "target": "Package",
-              "version": "[2021.1.0, )"
+              "version": "[2021.2.0, )"
             },
             "MyJetWallet.Sdk.Grpc": {
               "target": "Package",

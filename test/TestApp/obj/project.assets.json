@@ -131,7 +131,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Grpc.Core.Api/2.38.0": {
+      "Grpc.Core.Api/2.38.1": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -187,7 +187,7 @@
           "build/_._": {}
         }
       },
-      "JetBrains.Annotations/2021.1.0": {
+      "JetBrains.Annotations/2021.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
@@ -1804,9 +1804,9 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Autofac": "6.2.0",
-          "Grpc.Core.Api": "2.38.0",
+          "Grpc.Core.Api": "2.38.1",
           "Grpc.Net.Client": "2.38.0",
-          "JetBrains.Annotations": "2021.1.0",
+          "JetBrains.Annotations": "2021.2.0",
           "MyJetWallet.Sdk.Grpc": "1.0.2",
           "MyJetWallet.Sdk.GrpcMetrics": "2.0.0",
           "MyJetWallet.Sdk.NoSql": "1.2.0",
@@ -2030,14 +2030,14 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Core.Api/2.38.0": {
-      "sha512": "hqQEPxKyCwoq75OXmWDKe/rw/O9YjgdfIYmU/w8r5itMmHJp0HNmfHdxVVW9DSRuA836NM93qYoMdbTYQfWOHA==",
+    "Grpc.Core.Api/2.38.1": {
+      "sha512": "Z7e+LEXDCr2C0qUvyydShgLkuMChdT4biZsCg8xUaENZpO+y5VN4pUzcfj9jYVS8DOi8c/oqjx4WOlBuBKVhEg==",
       "type": "package",
-      "path": "grpc.core.api/2.38.0",
+      "path": "grpc.core.api/2.38.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.core.api.2.38.0.nupkg.sha512",
+        "grpc.core.api.2.38.1.nupkg.sha512",
         "grpc.core.api.nuspec",
         "lib/net45/Grpc.Core.Api.dll",
         "lib/net45/Grpc.Core.Api.pdb",
@@ -2161,15 +2161,15 @@
         "tools/windows_x86/protoc.exe"
       ]
     },
-    "JetBrains.Annotations/2021.1.0": {
-      "sha512": "n9JSw5Z+F+6gp9vSv4aLH6p/bx3GAYA6FZVq1wJq/TJySv/kPgFKLGFeS7A8Xa5X4/GWorh5gd43yjamUgnBNA==",
+    "JetBrains.Annotations/2021.2.0": {
+      "sha512": "kKSyoVfndMriKHLfYGmr0uzQuI4jcc3TKGyww7buJFCYeHb/X0kodYBPL7n9454q7v6ASiRmDgpPGaDGerg/Hg==",
       "type": "package",
-      "path": "jetbrains.annotations/2021.1.0",
+      "path": "jetbrains.annotations/2021.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "jetbrains.annotations.2021.1.0.nupkg.sha512",
+        "jetbrains.annotations.2021.2.0.nupkg.sha512",
         "jetbrains.annotations.nuspec",
         "lib/net20/JetBrains.Annotations.dll",
         "lib/net20/JetBrains.Annotations.xml",
