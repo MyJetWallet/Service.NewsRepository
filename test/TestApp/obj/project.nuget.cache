@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RoN9D4D5QgYHspgZOxUd1Uwk+lxFHW9WzYLIeJM9frCfC21fmFk78GPgcqKOtPkafi3MBDCASaw/LMpUYX7Ekw==",
+  "dgSpecHash": "TdY1uLIkc3H+lU17buKLJS0dXLl1e+CMfDHyhim+KypKarg+9Go2kUGrdYcQbgzPiUE3d94+FjGmtJC63j1dIQ==",
   "success": true,
   "projectFilePath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/TestApp/TestApp.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "/home/runner/.nuget/packages/grpc.aspnetcore/2.37.0/grpc.aspnetcore.2.37.0.nupkg.sha512",
     "/home/runner/.nuget/packages/grpc.aspnetcore.server/2.37.0/grpc.aspnetcore.server.2.37.0.nupkg.sha512",
     "/home/runner/.nuget/packages/grpc.aspnetcore.server.clientfactory/2.37.0/grpc.aspnetcore.server.clientfactory.2.37.0.nupkg.sha512",
-    "/home/runner/.nuget/packages/grpc.core.api/2.38.1/grpc.core.api.2.38.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/grpc.core.api/2.39.1/grpc.core.api.2.39.1.nupkg.sha512",
     "/home/runner/.nuget/packages/grpc.net.client/2.38.0/grpc.net.client.2.38.0.nupkg.sha512",
     "/home/runner/.nuget/packages/grpc.net.clientfactory/2.37.0/grpc.net.clientfactory.2.37.0.nupkg.sha512",
     "/home/runner/.nuget/packages/grpc.net.common/2.38.0/grpc.net.common.2.38.0.nupkg.sha512",
