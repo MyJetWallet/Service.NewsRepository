@@ -223,7 +223,7 @@
             },
             "Grpc.AspNetCore": {
               "target": "Package",
-              "version": "[2.38.0, )"
+              "version": "[2.39.0, )"
             },
             "JetBrains.Annotations": {
               "target": "Package",
@@ -271,7 +271,7 @@
             },
             "prometheus-net.AspNetCore": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[5.0.0, )"
             },
             "protobuf-net.Grpc.AspNetCore": {
               "target": "Package",
