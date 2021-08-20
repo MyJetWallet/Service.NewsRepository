@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oPVo+4csFhRqtBY5VEX2kfWjjsE8ojEtt8+BI7it1FG2c5C3YbEJpMh2IBTXeIY0SV5Puoke8kUnrtYaPYhtpw==",
+  "dgSpecHash": "2OX6Yqltt5KBdbRrOlBp2nHPV9WEb5QsZAmqY6Pq2Lp8Cp6SK1gQmYnGdFi1CnHDs7ANhvSKyZ96AWX5nNzFRQ==",
   "success": true,
   "projectFilePath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
   "expectedPackageFiles": [
@@ -64,8 +64,8 @@
     "/home/runner/.nuget/packages/opentelemetry.instrumentation.aspnetcore/1.0.0-rc3/opentelemetry.instrumentation.aspnetcore.1.0.0-rc3.nupkg.sha512",
     "/home/runner/.nuget/packages/opentelemetry.instrumentation.grpcnetclient/1.0.0-rc3/opentelemetry.instrumentation.grpcnetclient.1.0.0-rc3.nupkg.sha512",
     "/home/runner/.nuget/packages/opentelemetry.instrumentation.http/1.0.0-rc3/opentelemetry.instrumentation.http.1.0.0-rc3.nupkg.sha512",
-    "/home/runner/.nuget/packages/prometheus-net/5.0.0/prometheus-net.5.0.0.nupkg.sha512",
-    "/home/runner/.nuget/packages/prometheus-net.aspnetcore/5.0.0/prometheus-net.aspnetcore.5.0.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/prometheus-net/5.0.1/prometheus-net.5.0.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/prometheus-net.aspnetcore/5.0.1/prometheus-net.aspnetcore.5.0.1.nupkg.sha512",
     "/home/runner/.nuget/packages/protobuf-net/3.0.101/protobuf-net.3.0.101.nupkg.sha512",
     "/home/runner/.nuget/packages/protobuf-net.core/3.0.101/protobuf-net.core.3.0.101.nupkg.sha512",
     "/home/runner/.nuget/packages/protobuf-net.grpc/1.0.152/protobuf-net.grpc.1.0.152.nupkg.sha512",

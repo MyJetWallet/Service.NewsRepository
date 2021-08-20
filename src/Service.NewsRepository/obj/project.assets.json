@@ -815,7 +815,7 @@
           "lib/netstandard2.0/OpenTelemetry.Instrumentation.Http.dll": {}
         }
       },
-      "prometheus-net/5.0.0": {
+      "prometheus-net/5.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Http": "3.1.9"
@@ -829,10 +829,10 @@
           "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {}
         }
       },
-      "prometheus-net.AspNetCore/5.0.0": {
+      "prometheus-net.AspNetCore/5.0.1": {
         "type": "package",
         "dependencies": {
-          "prometheus-net": "5.0.0"
+          "prometheus-net": "5.0.1"
         },
         "compile": {
           "lib/netcoreapp3.1/Prometheus.AspNetCore.dll": {}
@@ -3091,10 +3091,10 @@
         "opentelemetry.instrumentation.http.nuspec"
       ]
     },
-    "prometheus-net/5.0.0": {
-      "sha512": "2BH6TUq4e/6QTU8eQYOadw9lyxOTz9Vy9SW6YDlaNa9WnFJ7OzqozC8BtRSHA2/YSBPaQ5X+v+o+GQmGN/fVIw==",
+    "prometheus-net/5.0.1": {
+      "sha512": "tg+vGeKCUqaWPzHAuKI87/rqQD4RKjb/jlRqSPaAdGRFd/SFDFRHPE8Rcy5Rx2f4xqdR+s3qTQ/0Y/IHbI3D1Q==",
       "type": "package",
-      "path": "prometheus-net/5.0.0",
+      "path": "prometheus-net/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3114,14 +3114,14 @@
         "lib/netstandard2.0/Prometheus.NetStandard.dll",
         "lib/netstandard2.0/Prometheus.NetStandard.pdb",
         "lib/netstandard2.0/Prometheus.NetStandard.xml",
-        "prometheus-net.5.0.0.nupkg.sha512",
+        "prometheus-net.5.0.1.nupkg.sha512",
         "prometheus-net.nuspec"
       ]
     },
-    "prometheus-net.AspNetCore/5.0.0": {
-      "sha512": "QM4p4Vpv9HYCasgN0cU1dXu/zgFVKRpdueoEThvouNd6OaQFhWVlGzD6gNrxATm0UaHJBKLVhVsx/z34hxlUEA==",
+    "prometheus-net.AspNetCore/5.0.1": {
+      "sha512": "XMs9W7E05AfNTxr4jN6zrsFR1PKdvfWm7mq2DrS0+1WP9NLdf4IomOWxkDHo3laaf5UDk8C3eeYVltVYABlp9A==",
       "type": "package",
-      "path": "prometheus-net.aspnetcore/5.0.0",
+      "path": "prometheus-net.aspnetcore/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3134,7 +3134,7 @@
         "lib/netstandard2.0/Prometheus.AspNetCore.dll",
         "lib/netstandard2.0/Prometheus.AspNetCore.pdb",
         "lib/netstandard2.0/Prometheus.AspNetCore.xml",
-        "prometheus-net.aspnetcore.5.0.0.nupkg.sha512",
+        "prometheus-net.aspnetcore.5.0.1.nupkg.sha512",
         "prometheus-net.aspnetcore.nuspec"
       ]
     },
@@ -6380,7 +6380,7 @@
       "Service.NewsRepository.Grpc >= 1.0.0",
       "SimpleTrading.BaseMetrics >= 1.0.3",
       "SimpleTrading.ServiceStatusReporterConnector >= 1.0.9",
-      "prometheus-net.AspNetCore >= 5.0.0",
+      "prometheus-net.AspNetCore >= 5.0.1",
       "protobuf-net.Grpc.AspNetCore >= 1.0.152"
     ]
   },
@@ -6482,7 +6482,7 @@
           },
           "prometheus-net.AspNetCore": {
             "target": "Package",
-            "version": "[5.0.0, )"
+            "version": "[5.0.1, )"
           },
           "protobuf-net.Grpc.AspNetCore": {
             "target": "Package",

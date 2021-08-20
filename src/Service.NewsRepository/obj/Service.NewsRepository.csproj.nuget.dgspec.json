@@ -271,7 +271,7 @@
             },
             "prometheus-net.AspNetCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.1, )"
             },
             "protobuf-net.Grpc.AspNetCore": {
               "target": "Package",
