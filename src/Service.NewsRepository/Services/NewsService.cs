@@ -51,7 +51,7 @@ namespace Service.NewsRepository.Services
         public async Task DeleteNews(DeleteNewsRequest request)
         {
             await _newsWriter.DeleteAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Topic),
-                NewsNoSqlEntity.GenerateRowKey(request.Lang.ToLower()));
+                NewsNoSqlEntity.GenerateRowKey(request.Lang));
         }
     }
 }
