@@ -32,7 +32,7 @@ namespace Service.NewsRepository.Services
 
             if (request.LastDate != DateTime.MinValue)
             {
-                news = news.Where(e => e.Timestamp > request.LastDate)
+                news = news.Where(e => e.Timestamp < request.LastDate)
                     .OrderByDescending(e => e.Timestamp)
                     .Take(request.BatchSize);
             }
