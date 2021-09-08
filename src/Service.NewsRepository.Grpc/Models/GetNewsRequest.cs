@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.Serialization;
 
 namespace Service.NewsRepository.Grpc.Models
@@ -10,5 +11,11 @@ namespace Service.NewsRepository.Grpc.Models
         
         [DataMember(Order = 2)]
         public string Asset { get; set; }
+        
+        [DataMember(Order = 3)] 
+        public DateTime LastDate { get; set; }
+        
+        [DataMember(Order = 4)] 
+        public int BatchSize { get; set; }
     }
 }

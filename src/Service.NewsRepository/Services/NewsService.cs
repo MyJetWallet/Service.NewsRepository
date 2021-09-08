@@ -27,7 +27,20 @@ namespace Service.NewsRepository.Services
         public async Task<NewsListResponse> GetNews(GetNewsRequest request)
         {
             var data = await _newsWriter.GetAsync();
+            
             var news = data.Select(n => n.News);
+
+            if (request.LastDate != DateTime.MinValue)
+            {
+                news = news.Where(e => e.Timestamp > request.LastDate)
+                    .OrderByDescending(e => e.Timestamp)
+                    .Take(request.BatchSize);
+            }
+            else
+            {
+                news = news.OrderByDescending(e=> e.Timestamp)
+                    .Take(request.BatchSize);
+            }
 
             if (!string.IsNullOrWhiteSpace(request.Asset))
                 news = news.Where(t=>!t.AssociatedAssets.Any() || t.AssociatedAssets.Contains(request.Asset.ToUpper()));
