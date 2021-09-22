@@ -10,7 +10,7 @@ namespace Service.NewsRepository.Grpc.Models
         public string Lang { get; set; }
         
         [DataMember(Order = 2)]
-        public string Asset { get; set; }
+        public string Ticker { get; set; }
         
         [DataMember(Order = 3)] 
         public DateTime LastDate { get; set; }

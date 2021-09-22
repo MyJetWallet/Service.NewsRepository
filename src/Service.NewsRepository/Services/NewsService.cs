@@ -43,8 +43,8 @@ namespace Service.NewsRepository.Services
                     .Take(request.BatchSize);
             }
 
-            if (!string.IsNullOrWhiteSpace(request.Asset))
-                news = news.Where(t=>!t.AssociatedAssets.Any() || t.AssociatedAssets.Contains(request.Asset.ToUpper()));
+            if (!string.IsNullOrWhiteSpace(request.Ticker))
+                news = news.Where(t=>!t.AssociatedAssets.Any() || t.AssociatedAssets.Contains(request.Ticker.ToUpper()));
             
             if (!string.IsNullOrWhiteSpace(request.Lang))
                news = news.Where(t => t.Lang == request.Lang.ToLower());
