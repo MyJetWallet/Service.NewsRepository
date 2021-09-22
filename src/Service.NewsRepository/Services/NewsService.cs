@@ -60,26 +60,39 @@ namespace Service.NewsRepository.Services
             _logger.LogInformation("AddOrUpdateNews received request: {newsRequest}", JsonConvert.SerializeObject(request));
             request.Lang = request.Lang.ToLower();
             request.AssociatedAssets = request.AssociatedAssets.Select(asset => asset.ToUpper()).ToList();
-            await _newsWriter.InsertOrReplaceAsync(NewsNoSqlEntity.Create(request));
+            
+            var noSqlEntities = request.AssociatedAssets
+                .Select(ticker => NewsNoSqlEntity.Create(request, ticker))
+                .ToList();
+            await _newsWriter.BulkInsertOrReplaceAsync(noSqlEntities);
         }
 
         public async Task AddOrUpdateNewsCollection(AddOrUpdateNewsCollectionRequest request)
         {
             _logger.LogInformation("AddOrUpdateNewsCollection received request: {newsRequest}", JsonConvert.SerializeObject(request));
-            
+
+            if (request?.NewsCollection == null)
+            {
+                return;
+            }
+
+            var noSqlEntities = new List<NewsNoSqlEntity>();
             foreach (var news in request.NewsCollection)
             {
                 news.Lang = news.Lang.ToLower();
                 news.AssociatedAssets = news.AssociatedAssets.Select(asset => asset.ToUpper()).ToList();
+
+                noSqlEntities.AddRange(news.AssociatedAssets
+                        .Select(ticker => NewsNoSqlEntity.Create(news, ticker)));
             }
 
-            await _newsWriter.BulkInsertOrReplaceAsync(request.NewsCollection.Select(NewsNoSqlEntity.Create));
+            await _newsWriter.BulkInsertOrReplaceAsync(noSqlEntities);
         }
 
         public async Task DeleteNews(DeleteNewsRequest request)
         {
-            await _newsWriter.DeleteAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Topic),
-                NewsNoSqlEntity.GenerateRowKey(request.Lang));
+            await _newsWriter.DeleteAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Ticker, request.Lang),
+                NewsNoSqlEntity.GenerateRowKey(request.Date));
         }
     }
 }

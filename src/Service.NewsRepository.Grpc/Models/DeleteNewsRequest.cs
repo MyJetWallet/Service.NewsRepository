@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.Serialization;
 
 namespace Service.NewsRepository.Grpc.Models
@@ -6,9 +7,12 @@ namespace Service.NewsRepository.Grpc.Models
     public class DeleteNewsRequest
     {
         [DataMember(Order = 1)]
-        public string Topic { get; set; }
+        public string Ticker { get; set; }
         
         [DataMember(Order = 2)]
         public string Lang { get; set; }
+        
+        [DataMember(Order = 3)]
+        public DateTime Date { get; set; }
     }
 }
