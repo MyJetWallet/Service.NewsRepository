@@ -14,6 +14,8 @@ namespace Service.NewsRepository.Grpc
         
         [OperationContract]
         Task AddOrUpdateNews(News request);
+        [OperationContract]
+        Task AddOrUpdateNewsCollection(AddOrUpdateNewsCollectionRequest request);
         
         [OperationContract]
         Task DeleteNews(DeleteNewsRequest request);

@@ -63,6 +63,19 @@ namespace Service.NewsRepository.Services
             await _newsWriter.InsertOrReplaceAsync(NewsNoSqlEntity.Create(request));
         }
 
+        public async Task AddOrUpdateNewsCollection(AddOrUpdateNewsCollectionRequest request)
+        {
+            _logger.LogInformation("AddOrUpdateNewsCollection received request: {newsRequest}", JsonConvert.SerializeObject(request));
+            
+            foreach (var news in request.NewsCollection)
+            {
+                news.Lang = news.Lang.ToLower();
+                news.AssociatedAssets = news.AssociatedAssets.Select(asset => asset.ToUpper()).ToList();
+            }
+
+            await _newsWriter.BulkInsertOrReplaceAsync(request.NewsCollection.Select(NewsNoSqlEntity.Create));
+        }
+
         public async Task DeleteNews(DeleteNewsRequest request)
         {
             await _newsWriter.DeleteAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Topic),
