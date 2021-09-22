@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using MyNoSqlServer.Abstractions;
+using Newtonsoft.Json;
 using Service.NewsRepository.Domain.Models;
 using Service.NewsRepository.Domain.Models.NoSql;
 using Service.NewsRepository.Grpc;
@@ -56,6 +57,7 @@ namespace Service.NewsRepository.Services
 
         public async Task AddOrUpdateNews(News request)
         {
+            _logger.LogInformation("AddOrUpdateNews received request: {newsRequest}", JsonConvert.SerializeObject(request));
             request.Lang = request.Lang.ToLower();
             request.AssociatedAssets = request.AssociatedAssets.Select(asset => asset.ToUpper()).ToList();
             await _newsWriter.InsertOrReplaceAsync(NewsNoSqlEntity.Create(request));
