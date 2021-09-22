@@ -16,5 +16,6 @@ namespace Service.NewsRepository.Domain.Models
         [DataMember(Order = 7)] public List<string> AssociatedAssets { get; set; } = new();
         [DataMember(Order = 8)] public string ImageUrl { get; set; }
         [DataMember(Order = 9)] public string Sentiment { get; set; }
+        [DataMember(Order = 10)] public string IntegrationSource { get; set; }
     }
 }
