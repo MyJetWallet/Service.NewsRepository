@@ -7,6 +7,6 @@ namespace Service.NewsRepository.Grpc.Models
     [DataContract]
     public class AddOrUpdateNewsCollectionRequest
     {
-        public List<News> NewsCollection { get; set; }
+        [DataMember(Order = 1)] public List<News> NewsCollection { get; set; }
     }
 }
