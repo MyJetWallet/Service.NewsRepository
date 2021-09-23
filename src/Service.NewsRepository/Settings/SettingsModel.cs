@@ -16,5 +16,8 @@ namespace Service.NewsRepository.Settings
         
         [YamlProperty("NewsRepository.MyNoSqlWriterUrl")]
         public string MyNoSqlWriterUrl { get; set; }
+
+        [YamlProperty("NewsRepository.CleanAndKeepLastRecordsCount")]
+        public int CleanAndKeepLastRecordsCount { get; set; }
     }
 }

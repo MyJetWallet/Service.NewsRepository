@@ -65,6 +65,10 @@ namespace Service.NewsRepository.Services
                 .Select(ticker => NewsNoSqlEntity.Create(request, ticker))
                 .ToList();
             await _newsWriter.BulkInsertOrReplaceAsync(noSqlEntities);
+            foreach (var noSqlEntity in noSqlEntities)
+            {
+                await _newsWriter.CleanAndKeepLastRecordsAsync(noSqlEntity.PartitionKey, Program.Settings.CleanAndKeepLastRecordsCount);
+            }
         }
 
         public async Task AddOrUpdateNewsCollection(AddOrUpdateNewsCollectionRequest request)
@@ -87,7 +91,11 @@ namespace Service.NewsRepository.Services
             }
 
             await _newsWriter.BulkInsertOrReplaceAsync(noSqlEntities);
-            await _newsWriter.CleanAndKeepMaxPartitions(100);
+
+            foreach (var noSqlEntity in noSqlEntities)
+            {
+                await _newsWriter.CleanAndKeepLastRecordsAsync(noSqlEntity.PartitionKey, Program.Settings.CleanAndKeepLastRecordsCount);
+            }
         }
 
         public async Task DeleteNews(DeleteNewsRequest request)
