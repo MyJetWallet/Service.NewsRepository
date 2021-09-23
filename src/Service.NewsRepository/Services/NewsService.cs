@@ -87,6 +87,7 @@ namespace Service.NewsRepository.Services
             }
 
             await _newsWriter.BulkInsertOrReplaceAsync(noSqlEntities);
+            await _newsWriter.CleanAndKeepMaxPartitions(100);
         }
 
         public async Task DeleteNews(DeleteNewsRequest request)
