@@ -27,6 +27,18 @@
           "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
+      "Destructurama.Attributed/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "[2.8.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/Destructurama.Attributed.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Destructurama.Attributed.dll": {}
+        }
+      },
       "DotNetCoreDecorators/1.0.21": {
         "type": "package",
         "compile": {
@@ -613,10 +625,11 @@
           "lib/net5.0/MyJetWallet.Sdk.NoSql.dll": {}
         }
       },
-      "MyJetWallet.Sdk.Service/1.5.5": {
+      "MyJetWallet.Sdk.Service/1.6.0": {
         "type": "package",
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "Destructurama.Attributed": "3.0.0",
           "Grpc.AspNetCore": "2.37.0",
           "JetBrains.Annotations": "2021.1.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
@@ -2002,6 +2015,22 @@
         "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.xml"
       ]
     },
+    "Destructurama.Attributed/3.0.0": {
+      "sha512": "Wam0fvMhCrtN0HvRIiHpNsW8HhlKHM5CkAlUzrAdzqkzuHVBj3zd/zfY9610NELW296Vugcnmf/TMiaUMvepvA==",
+      "type": "package",
+      "path": "destructurama.attributed/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "destructurama.attributed.3.0.0.nupkg.sha512",
+        "destructurama.attributed.nuspec",
+        "icon.png",
+        "lib/netstandard1.1/Destructurama.Attributed.dll",
+        "lib/netstandard1.1/Destructurama.Attributed.xml",
+        "lib/netstandard2.0/Destructurama.Attributed.dll",
+        "lib/netstandard2.0/Destructurama.Attributed.xml"
+      ]
+    },
     "DotNetCoreDecorators/1.0.21": {
       "sha512": "ixmvlqe0qs9k5AlzeTldzfQoRBSVaGvscHCtpLco+hlUSbGKpIgjz7Z+WgepZ3GOHEQUXsuwWfbF4AIJ1VmfFQ==",
       "type": "package",
@@ -2867,15 +2896,15 @@
         "myjetwallet.sdk.nosql.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.Service/1.5.5": {
-      "sha512": "G5kCXKqeISrkYyVJFjxq2LQbPojAMiFVLAy+psn6lWo9lvgbanNGw3JBeLSi7dpoiWpyo19DShwgTVIIKT2mCg==",
+    "MyJetWallet.Sdk.Service/1.6.0": {
+      "sha512": "0A3MV1Ei4QyiEyDywDFhfY47IvQ0qJ97vlxNC4xFukCQ/sNde0V9TQao5ob1NSiFoxGYvmRBwWS1SsmAxnm/Zw==",
       "type": "package",
-      "path": "myjetwallet.sdk.service/1.5.5",
+      "path": "myjetwallet.sdk.service/1.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/MyJetWallet.Sdk.Service.dll",
-        "myjetwallet.sdk.service.1.5.5.nupkg.sha512",
+        "myjetwallet.sdk.service.1.6.0.nupkg.sha512",
         "myjetwallet.sdk.service.nuspec"
       ]
     },
@@ -6373,7 +6402,7 @@
       "MyJetWallet.Sdk.GrpcMetrics >= 2.0.0",
       "MyJetWallet.Sdk.GrpcSchema >= 1.0.6",
       "MyJetWallet.Sdk.NoSql >= 1.2.0",
-      "MyJetWallet.Sdk.Service >= 1.5.5",
+      "MyJetWallet.Sdk.Service >= 1.6.0",
       "MySettingsReader >= 1.2.1",
       "Newtonsoft.Json >= 13.0.1",
       "Service.NewsRepository.Domain >= 1.0.0",
@@ -6462,7 +6491,7 @@
           },
           "MyJetWallet.Sdk.Service": {
             "target": "Package",
-            "version": "[1.5.5, )"
+            "version": "[1.6.0, )"
           },
           "MySettingsReader": {
             "target": "Package",
