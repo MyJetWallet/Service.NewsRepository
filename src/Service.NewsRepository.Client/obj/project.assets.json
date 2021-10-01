@@ -131,7 +131,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Grpc.Core.Api/2.40.0": {
+      "Grpc.Core.Api/2.41.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -2008,14 +2008,14 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Core.Api/2.40.0": {
-      "sha512": "Ig3ioHBMDl8jZzPRU+t8GPpgDBYkjwupHzSVswwrsUVZdO5SThmYY4fHftNC1rMCjsjVvUMQ/o1NCf1CT4Y+rA==",
+    "Grpc.Core.Api/2.41.0": {
+      "sha512": "bQ/mLaeACJ16hINQzKZA0ge648acF0OUiHd8JMdvpywJ41UFilDOd+t3yDG0M2XxgbB98z8EUf0HnprHLOO0qg==",
       "type": "package",
-      "path": "grpc.core.api/2.40.0",
+      "path": "grpc.core.api/2.41.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.core.api.2.40.0.nupkg.sha512",
+        "grpc.core.api.2.41.0.nupkg.sha512",
         "grpc.core.api.nuspec",
         "lib/net45/Grpc.Core.Api.dll",
         "lib/net45/Grpc.Core.Api.pdb",
@@ -6099,7 +6099,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Autofac >= 6.2.0",
-      "Grpc.Core.Api >= 2.40.0",
+      "Grpc.Core.Api >= 2.41.0",
       "Grpc.Net.Client >= 2.39.0",
       "JetBrains.Annotations >= 2021.2.0",
       "MyJetWallet.Sdk.Grpc >= 1.0.2",
@@ -6164,7 +6164,7 @@
           },
           "Grpc.Core.Api": {
             "target": "Package",
-            "version": "[2.40.0, )"
+            "version": "[2.41.0, )"
           },
           "Grpc.Net.Client": {
             "target": "Package",
