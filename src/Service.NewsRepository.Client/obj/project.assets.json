@@ -143,10 +143,10 @@
           "lib/netstandard2.0/Grpc.Core.Api.dll": {}
         }
       },
-      "Grpc.Net.Client/2.39.0": {
+      "Grpc.Net.Client/2.40.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Net.Common": "2.39.0",
+          "Grpc.Net.Common": "2.40.0",
           "Microsoft.Extensions.Logging.Abstractions": "3.0.3"
         },
         "compile": {
@@ -169,10 +169,10 @@
           "lib/net5.0/Grpc.Net.ClientFactory.dll": {}
         }
       },
-      "Grpc.Net.Common/2.39.0": {
+      "Grpc.Net.Common/2.40.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Core.Api": "2.39.1"
+          "Grpc.Core.Api": "2.40.0"
         },
         "compile": {
           "lib/net5.0/Grpc.Net.Common.dll": {}
@@ -2028,18 +2028,21 @@
         "lib/netstandard2.0/Grpc.Core.Api.xml"
       ]
     },
-    "Grpc.Net.Client/2.39.0": {
-      "sha512": "i2IBxBf+/I9U6C0CgIEg6LU7TTzOjGI6ff15arSOnLNs22WcrIOTDoNwUZ5h6z1ymcFUIQcoJqjd15UeW0U7zQ==",
+    "Grpc.Net.Client/2.40.0": {
+      "sha512": "+Z+onJ5jOLwKR41wROs+I1Bo6+NKT9ov/moXZCi9vH7aDRVQuqhmfALoxWdsNUNO9Bl3A/VzmfPB2jxZB4B1WQ==",
       "type": "package",
-      "path": "grpc.net.client/2.39.0",
+      "path": "grpc.net.client/2.40.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.net.client.2.39.0.nupkg.sha512",
+        "grpc.net.client.2.40.0.nupkg.sha512",
         "grpc.net.client.nuspec",
         "lib/net5.0/Grpc.Net.Client.dll",
         "lib/net5.0/Grpc.Net.Client.pdb",
         "lib/net5.0/Grpc.Net.Client.xml",
+        "lib/net6.0/Grpc.Net.Client.dll",
+        "lib/net6.0/Grpc.Net.Client.pdb",
+        "lib/net6.0/Grpc.Net.Client.xml",
         "lib/netstandard2.0/Grpc.Net.Client.dll",
         "lib/netstandard2.0/Grpc.Net.Client.pdb",
         "lib/netstandard2.0/Grpc.Net.Client.xml",
@@ -2070,18 +2073,21 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.Common/2.39.0": {
-      "sha512": "67nApml/WnMHHm4b26mk5xnW7vAEE9TEEA/tyswFMg9O8bDlriGTvoCoNMO1fDNyXtasYT1Pk7jyd9BqLCQ2tw==",
+    "Grpc.Net.Common/2.40.0": {
+      "sha512": "nj5XotYmzAT4UlGyOK6xWacPp2nODupQvlbeA2qqu9F47BIr+vze6+psJ9gSgED2HeTVBXuc+vdKrUXzk0ErMQ==",
       "type": "package",
-      "path": "grpc.net.common/2.39.0",
+      "path": "grpc.net.common/2.40.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.net.common.2.39.0.nupkg.sha512",
+        "grpc.net.common.2.40.0.nupkg.sha512",
         "grpc.net.common.nuspec",
         "lib/net5.0/Grpc.Net.Common.dll",
         "lib/net5.0/Grpc.Net.Common.pdb",
         "lib/net5.0/Grpc.Net.Common.xml",
+        "lib/net6.0/Grpc.Net.Common.dll",
+        "lib/net6.0/Grpc.Net.Common.pdb",
+        "lib/net6.0/Grpc.Net.Common.xml",
         "lib/netstandard2.0/Grpc.Net.Common.dll",
         "lib/netstandard2.0/Grpc.Net.Common.pdb",
         "lib/netstandard2.0/Grpc.Net.Common.xml",
@@ -6100,7 +6106,7 @@
     "net5.0": [
       "Autofac >= 6.2.0",
       "Grpc.Core.Api >= 2.41.0",
-      "Grpc.Net.Client >= 2.39.0",
+      "Grpc.Net.Client >= 2.40.0",
       "JetBrains.Annotations >= 2021.2.0",
       "MyJetWallet.Sdk.Grpc >= 1.0.2",
       "MyJetWallet.Sdk.GrpcMetrics >= 2.0.0",
@@ -6168,7 +6174,7 @@
           },
           "Grpc.Net.Client": {
             "target": "Package",
-            "version": "[2.39.0, )"
+            "version": "[2.40.0, )"
           },
           "JetBrains.Annotations": {
             "target": "Package",
