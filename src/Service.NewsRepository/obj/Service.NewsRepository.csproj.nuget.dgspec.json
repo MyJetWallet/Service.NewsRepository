@@ -239,7 +239,7 @@
             },
             "MyJetWallet.Sdk.GrpcMetrics": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.0.1, )"
             },
             "MyJetWallet.Sdk.GrpcSchema": {
               "target": "Package",
@@ -251,7 +251,7 @@
             },
             "MyJetWallet.Sdk.Service": {
               "target": "Package",
-              "version": "[1.6.5, )"
+              "version": "[1.6.6, )"
             },
             "MySettingsReader": {
               "target": "Package",
