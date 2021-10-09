@@ -49,7 +49,7 @@
           "dependencies": {
             "Autofac": {
               "target": "Package",
-              "version": "[6.2.0, )"
+              "version": "[6.3.0, )"
             },
             "Grpc.Core.Api": {
               "target": "Package",
@@ -69,7 +69,7 @@
             },
             "MyJetWallet.Sdk.GrpcMetrics": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[2.0.2, )"
             },
             "MyJetWallet.Sdk.NoSql": {
               "target": "Package",

@@ -586,10 +586,10 @@
           "lib/net5.0/MyJetWallet.Sdk.Grpc.dll": {}
         }
       },
-      "MyJetWallet.Sdk.GrpcMetrics/2.0.1": {
+      "MyJetWallet.Sdk.GrpcMetrics/2.0.2": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.1.0",
+          "OpenTelemetry": "1.0.1",
           "System.Diagnostics.DiagnosticSource": "5.0.1",
           "System.Text.Json": "5.0.2",
           "prometheus-net": "5.0.1",
@@ -634,7 +634,7 @@
           "lib/net5.0/MyJetWallet.Sdk.NoSql.dll": {}
         }
       },
-      "MyJetWallet.Sdk.Service/1.6.6": {
+      "MyJetWallet.Sdk.Service/1.6.9": {
         "type": "package",
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "7.1.0",
@@ -647,11 +647,13 @@
           "MyJetWallet.Sdk.GrpcMetrics": "2.0.1",
           "MySettingsReader": "1.2.1",
           "Newtonsoft.Json": "13.0.1",
-          "OpenTelemetry.Exporter.Zipkin": "1.1.0-beta1",
-          "OpenTelemetry.Extensions.Hosting": "1.0.0-rc3",
-          "OpenTelemetry.Instrumentation.AspNetCore": "1.0.0-rc3",
-          "OpenTelemetry.Instrumentation.GrpcNetClient": "1.0.0-rc3",
-          "OpenTelemetry.Instrumentation.Http": "1.0.0-rc3",
+          "OpenTelemetry": "1.1.0",
+          "OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore": "1.0.0-beta2",
+          "OpenTelemetry.Exporter.Zipkin": "1.1.0",
+          "OpenTelemetry.Extensions.Hosting": "1.0.0-rc7",
+          "OpenTelemetry.Instrumentation.AspNetCore": "1.0.0-rc7",
+          "OpenTelemetry.Instrumentation.GrpcNetClient": "1.0.0-rc7",
+          "OpenTelemetry.Instrumentation.Http": "1.0.0-rc7",
           "Serilog": "2.10.0",
           "Serilog.AspNetCore": "4.1.0",
           "Serilog.Enrichers.Context": "4.2.0",
@@ -775,10 +777,22 @@
           "lib/netstandard2.0/OpenTelemetry.Api.dll": {}
         }
       },
-      "OpenTelemetry.Exporter.Zipkin/1.1.0-beta1": {
+      "OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore/1.0.0-beta2": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.1.0-beta1",
+          "OpenTelemetry.Api": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore.dll": {}
+        }
+      },
+      "OpenTelemetry.Exporter.Zipkin/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenTelemetry": "1.1.0",
           "System.Text.Json": "4.7.0"
         },
         "compile": {
@@ -788,11 +802,11 @@
           "lib/netstandard2.0/OpenTelemetry.Exporter.Zipkin.dll": {}
         }
       },
-      "OpenTelemetry.Extensions.Hosting/1.0.0-rc3": {
+      "OpenTelemetry.Extensions.Hosting/1.0.0-rc7": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, 6.0.0)",
-          "OpenTelemetry": "1.1.0-beta1"
+          "OpenTelemetry": "1.1.0"
         },
         "compile": {
           "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.dll": {}
@@ -801,24 +815,26 @@
           "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.dll": {}
         }
       },
-      "OpenTelemetry.Instrumentation.AspNetCore/1.0.0-rc3": {
+      "OpenTelemetry.Instrumentation.AspNetCore/1.0.0-rc7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
           "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
-          "OpenTelemetry": "1.1.0-beta1"
+          "OpenTelemetry": "1.1.0"
         },
         "compile": {
-          "lib/netstandard2.1/OpenTelemetry.Instrumentation.AspNetCore.dll": {}
+          "lib/net5.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/OpenTelemetry.Instrumentation.AspNetCore.dll": {}
-        }
+          "lib/net5.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
-      "OpenTelemetry.Instrumentation.GrpcNetClient/1.0.0-rc3": {
+      "OpenTelemetry.Instrumentation.GrpcNetClient/1.0.0-rc7": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.1.0-beta1"
+          "OpenTelemetry": "1.1.0"
         },
         "compile": {
           "lib/netstandard2.1/OpenTelemetry.Instrumentation.GrpcNetClient.dll": {}
@@ -827,10 +843,10 @@
           "lib/netstandard2.1/OpenTelemetry.Instrumentation.GrpcNetClient.dll": {}
         }
       },
-      "OpenTelemetry.Instrumentation.Http/1.0.0-rc3": {
+      "OpenTelemetry.Instrumentation.Http/1.0.0-rc7": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.1.0-beta1"
+          "OpenTelemetry": "1.1.0"
         },
         "compile": {
           "lib/netstandard2.0/OpenTelemetry.Instrumentation.Http.dll": {}
@@ -2883,15 +2899,15 @@
         "myjetwallet.sdk.grpc.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.GrpcMetrics/2.0.1": {
-      "sha512": "hK0c76soGUyYkIfZ+5DOoZ4QZ7hdu5Ov+B2za6EHJToMyFHDEqneRCzrdGPz5KopIvyXNzulAJoDh8XXAaA7rg==",
+    "MyJetWallet.Sdk.GrpcMetrics/2.0.2": {
+      "sha512": "FFKKVQdSrd546Br3jLpiXJ5bjzg3uR38MoqJCvBir5k2qicwI5oM26pgEea4D3VjFarmTfQ168cX/8G3jPGAQg==",
       "type": "package",
-      "path": "myjetwallet.sdk.grpcmetrics/2.0.1",
+      "path": "myjetwallet.sdk.grpcmetrics/2.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/MyJetWallet.Sdk.GrpcMetrics.dll",
-        "myjetwallet.sdk.grpcmetrics.2.0.1.nupkg.sha512",
+        "myjetwallet.sdk.grpcmetrics.2.0.2.nupkg.sha512",
         "myjetwallet.sdk.grpcmetrics.nuspec"
       ]
     },
@@ -2919,15 +2935,15 @@
         "myjetwallet.sdk.nosql.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.Service/1.6.6": {
-      "sha512": "SZc4n+3DNGKBZV83fKoeAcJg9OM4ajRqPQPUnwCz0O2a9+ACTy9DQGovJ/d2aYvVMmCCShrW5Ix/rMlCCX1I6g==",
+    "MyJetWallet.Sdk.Service/1.6.9": {
+      "sha512": "QoxN7nial0Ed63kwKhtAfLmbLE7tnyGx/F6YrDYu3K0Bs3d+52mHLq9qnNdb5OGbI4tYDAzcZatLFSh3BNFzkA==",
       "type": "package",
-      "path": "myjetwallet.sdk.service/1.6.6",
+      "path": "myjetwallet.sdk.service/1.6.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/MyJetWallet.Sdk.Service.dll",
-        "myjetwallet.sdk.service.1.6.6.nupkg.sha512",
+        "myjetwallet.sdk.service.1.6.9.nupkg.sha512",
         "myjetwallet.sdk.service.nuspec"
       ]
     },
@@ -3063,10 +3079,24 @@
         "opentelemetry.api.nuspec"
       ]
     },
-    "OpenTelemetry.Exporter.Zipkin/1.1.0-beta1": {
-      "sha512": "AaeGbFYqFpXaV1xPB174ShCVEQGbGwedu233GYRKX0vu8xMAgoJgWRN7p+AgyQq2NFnXU2IVKsqXbXiWbJxo+w==",
+    "OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore/1.0.0-beta2": {
+      "sha512": "legTYmOM+bEQ+uXmMi5VgyEZWWXRkp7zJDZ2lbA10d+aN5Qykk150H8PuS3hrCvmho8bn/JZFDmiJjrzaDE0DA==",
       "type": "package",
-      "path": "opentelemetry.exporter.zipkin/1.1.0-beta1",
+      "path": "opentelemetry.contrib.instrumentation.entityframeworkcore/1.0.0-beta2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore.dll",
+        "lib/netstandard2.0/OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore.xml",
+        "opentelemetry-icon-color.png",
+        "opentelemetry.contrib.instrumentation.entityframeworkcore.1.0.0-beta2.nupkg.sha512",
+        "opentelemetry.contrib.instrumentation.entityframeworkcore.nuspec"
+      ]
+    },
+    "OpenTelemetry.Exporter.Zipkin/1.1.0": {
+      "sha512": "DEAMAnzqrW7/wQ9IRDPyctp4MAP/6MR1YBrEHkasskbkOAge+z4SxESir3qVb8Lh+OWV9Q9lK2DN2ktopGYc6A==",
+      "type": "package",
+      "path": "opentelemetry.exporter.zipkin/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3077,58 +3107,62 @@
         "lib/netstandard2.0/OpenTelemetry.Exporter.Zipkin.dll",
         "lib/netstandard2.0/OpenTelemetry.Exporter.Zipkin.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.exporter.zipkin.1.1.0-beta1.nupkg.sha512",
+        "opentelemetry.exporter.zipkin.1.1.0.nupkg.sha512",
         "opentelemetry.exporter.zipkin.nuspec"
       ]
     },
-    "OpenTelemetry.Extensions.Hosting/1.0.0-rc3": {
-      "sha512": "rflctVuby73D1BJaLgvDJOpQ7edrzyyLf8AYkgpNAoXO/pB2ZdsawQ5sl+Bu5pj4l8PGIG33gFhoIHmgSv5X5w==",
+    "OpenTelemetry.Extensions.Hosting/1.0.0-rc7": {
+      "sha512": "WFsypEohIYlkkORZsZYfOUEq+d2Pwn83P8A2kT+KXS+zcvrQZzuXxZFVASr2xcStoH867MHUIGSEPUrBCnWURg==",
       "type": "package",
-      "path": "opentelemetry.extensions.hosting/1.0.0-rc3",
+      "path": "opentelemetry.extensions.hosting/1.0.0-rc7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.dll",
         "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.extensions.hosting.1.0.0-rc3.nupkg.sha512",
+        "opentelemetry.extensions.hosting.1.0.0-rc7.nupkg.sha512",
         "opentelemetry.extensions.hosting.nuspec"
       ]
     },
-    "OpenTelemetry.Instrumentation.AspNetCore/1.0.0-rc3": {
-      "sha512": "9cnBXXI189Jm4GhP5CjdfmXfcZBMSEJ6PGWmKsdelIH2MkCIVB++6IbPtdqmQlttWWzOIEVBsYoK+ScSWd4s4Q==",
+    "OpenTelemetry.Instrumentation.AspNetCore/1.0.0-rc7": {
+      "sha512": "PvIzS9+fdrmsuJUib0NXWWreYuTmuR1ZlXQiSDP3RKstd4lt3aiIo8p0zrDesjvib5Ap4FYJ7+QR0dsumJNkQw==",
       "type": "package",
-      "path": "opentelemetry.instrumentation.aspnetcore/1.0.0-rc3",
+      "path": "opentelemetry.instrumentation.aspnetcore/1.0.0-rc7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net5.0/OpenTelemetry.Instrumentation.AspNetCore.dll",
+        "lib/net5.0/OpenTelemetry.Instrumentation.AspNetCore.xml",
+        "lib/netcoreapp3.1/OpenTelemetry.Instrumentation.AspNetCore.dll",
+        "lib/netcoreapp3.1/OpenTelemetry.Instrumentation.AspNetCore.xml",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.AspNetCore.dll",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.AspNetCore.xml",
         "lib/netstandard2.1/OpenTelemetry.Instrumentation.AspNetCore.dll",
         "lib/netstandard2.1/OpenTelemetry.Instrumentation.AspNetCore.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.instrumentation.aspnetcore.1.0.0-rc3.nupkg.sha512",
+        "opentelemetry.instrumentation.aspnetcore.1.0.0-rc7.nupkg.sha512",
         "opentelemetry.instrumentation.aspnetcore.nuspec"
       ]
     },
-    "OpenTelemetry.Instrumentation.GrpcNetClient/1.0.0-rc3": {
-      "sha512": "Dl3cMDLYoJadgXE5V29SWJWUcBnkH+P0tAYsiiukPYjymt8mmgZDm+5KDZd2U64dZDVeiWvOpon09jSEGM6b1Q==",
+    "OpenTelemetry.Instrumentation.GrpcNetClient/1.0.0-rc7": {
+      "sha512": "2YfhJNfOi/39r8fw1liU6Ep4tzB96E/RS8+ZmOBZA7Vag/uG0TYEoA+327ze6BBQRna6C99pSqC/P8e8FsMpYg==",
       "type": "package",
-      "path": "opentelemetry.instrumentation.grpcnetclient/1.0.0-rc3",
+      "path": "opentelemetry.instrumentation.grpcnetclient/1.0.0-rc7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.1/OpenTelemetry.Instrumentation.GrpcNetClient.dll",
         "lib/netstandard2.1/OpenTelemetry.Instrumentation.GrpcNetClient.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.instrumentation.grpcnetclient.1.0.0-rc3.nupkg.sha512",
+        "opentelemetry.instrumentation.grpcnetclient.1.0.0-rc7.nupkg.sha512",
         "opentelemetry.instrumentation.grpcnetclient.nuspec"
       ]
     },
-    "OpenTelemetry.Instrumentation.Http/1.0.0-rc3": {
-      "sha512": "KIkx4MZW7w/Znpxqt5j93BBpheKlUjqT+/0d+y5WnjE7I2pt1H5BPmyR31cnOCQlJY5R733GLubaPjKrXgLz1g==",
+    "OpenTelemetry.Instrumentation.Http/1.0.0-rc7": {
+      "sha512": "Ss0vM+JkGWSzW5HLEXHVu5hP0QHA8AdPmMQDTsIoU/nWV1lZRXs6bSxH68nIrQa4N0U1Ae7ayb8gxnmVnNtB/g==",
       "type": "package",
-      "path": "opentelemetry.instrumentation.http/1.0.0-rc3",
+      "path": "opentelemetry.instrumentation.http/1.0.0-rc7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3139,7 +3173,7 @@
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.Http.dll",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.Http.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.instrumentation.http.1.0.0-rc3.nupkg.sha512",
+        "opentelemetry.instrumentation.http.1.0.0-rc7.nupkg.sha512",
         "opentelemetry.instrumentation.http.nuspec"
       ]
     },
@@ -6383,10 +6417,10 @@
       "JetBrains.Annotations >= 2021.2.0",
       "Microsoft.Extensions.Configuration >= 5.0.0",
       "Microsoft.Extensions.Logging >= 5.0.0",
-      "MyJetWallet.Sdk.GrpcMetrics >= 2.0.1",
+      "MyJetWallet.Sdk.GrpcMetrics >= 2.0.2",
       "MyJetWallet.Sdk.GrpcSchema >= 1.0.6",
       "MyJetWallet.Sdk.NoSql >= 1.2.0",
-      "MyJetWallet.Sdk.Service >= 1.6.6",
+      "MyJetWallet.Sdk.Service >= 1.6.9",
       "MySettingsReader >= 1.2.1",
       "Newtonsoft.Json >= 13.0.1",
       "Service.NewsRepository.Domain >= 1.0.0",
@@ -6463,7 +6497,7 @@
           },
           "MyJetWallet.Sdk.GrpcMetrics": {
             "target": "Package",
-            "version": "[2.0.1, )"
+            "version": "[2.0.2, )"
           },
           "MyJetWallet.Sdk.GrpcSchema": {
             "target": "Package",
@@ -6475,7 +6509,7 @@
           },
           "MyJetWallet.Sdk.Service": {
             "target": "Package",
-            "version": "[1.6.6, )"
+            "version": "[1.6.9, )"
           },
           "MySettingsReader": {
             "target": "Package",

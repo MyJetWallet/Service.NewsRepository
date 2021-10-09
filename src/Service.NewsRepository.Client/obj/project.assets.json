@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "Autofac/6.2.0": {
+      "Autofac/6.3.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "4.7.1"
@@ -534,10 +534,10 @@
           "lib/net5.0/MyJetWallet.Sdk.Grpc.dll": {}
         }
       },
-      "MyJetWallet.Sdk.GrpcMetrics/2.0.1": {
+      "MyJetWallet.Sdk.GrpcMetrics/2.0.2": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.1.0",
+          "OpenTelemetry": "1.0.1",
           "System.Diagnostics.DiagnosticSource": "5.0.1",
           "System.Text.Json": "5.0.2",
           "prometheus-net": "5.0.1",
@@ -674,12 +674,12 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "OpenTelemetry/1.1.0": {
+      "OpenTelemetry/1.1.0-beta1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "[2.1.0, 6.0.0)",
           "Microsoft.Extensions.Logging.Configuration": "[2.1.0, 6.0.0)",
-          "OpenTelemetry.Api": "1.1.0",
+          "OpenTelemetry.Api": "1.1.0-beta1",
           "System.Collections.Immutable": "1.4.0",
           "System.Reflection.Emit.Lightweight": "4.7.0"
         },
@@ -690,7 +690,7 @@
           "lib/netstandard2.0/OpenTelemetry.dll": {}
         }
       },
-      "OpenTelemetry.Api/1.1.0": {
+      "OpenTelemetry.Api/1.1.0-beta1": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "5.0.1",
@@ -1828,14 +1828,14 @@
     }
   },
   "libraries": {
-    "Autofac/6.2.0": {
-      "sha512": "BX8IM0GANE38uSr4QwXL4PgA8vWWYt2P5cZzipn/vDnf0fDbPSGKSHEroJ09rB7ANxdyf7MdEgVs+pvL8kwYCg==",
+    "Autofac/6.3.0": {
+      "sha512": "gO4bli0N8tDnBHzbYktcnbXlmN6T+IT5W+FUGgCUaM6pwwHXIxOPoUGvfGum7sZpJJgfQNgjFFv80ZPuARgRdA==",
       "type": "package",
-      "path": "autofac/6.2.0",
+      "path": "autofac/6.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "autofac.6.2.0.nupkg.sha512",
+        "autofac.6.3.0.nupkg.sha512",
         "autofac.nuspec",
         "icon.png",
         "lib/net5.0/Autofac.dll",
@@ -2687,15 +2687,15 @@
         "myjetwallet.sdk.grpc.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.GrpcMetrics/2.0.1": {
-      "sha512": "hK0c76soGUyYkIfZ+5DOoZ4QZ7hdu5Ov+B2za6EHJToMyFHDEqneRCzrdGPz5KopIvyXNzulAJoDh8XXAaA7rg==",
+    "MyJetWallet.Sdk.GrpcMetrics/2.0.2": {
+      "sha512": "FFKKVQdSrd546Br3jLpiXJ5bjzg3uR38MoqJCvBir5k2qicwI5oM26pgEea4D3VjFarmTfQ168cX/8G3jPGAQg==",
       "type": "package",
-      "path": "myjetwallet.sdk.grpcmetrics/2.0.1",
+      "path": "myjetwallet.sdk.grpcmetrics/2.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/MyJetWallet.Sdk.GrpcMetrics.dll",
-        "myjetwallet.sdk.grpcmetrics.2.0.1.nupkg.sha512",
+        "myjetwallet.sdk.grpcmetrics.2.0.2.nupkg.sha512",
         "myjetwallet.sdk.grpcmetrics.nuspec"
       ]
     },
@@ -2819,10 +2819,10 @@
         "packageIcon.png"
       ]
     },
-    "OpenTelemetry/1.1.0": {
-      "sha512": "vNZI1Mh00DfZpcY/Fq/xWlM6QK8L+9H6whSu+kwlBxXLIB1MPJz7q6VgOoF6nJEMGAzk5Km8SY27rKOwEAjnFg==",
+    "OpenTelemetry/1.1.0-beta1": {
+      "sha512": "Cpaah0FksFQft8yTfvv4AUuzwBJiw7auu8QQ1gD7nJW6Hfrm2FtzEhpECOSQ7t40tGm6Gwz5iYWIj0d8dnBYvw==",
       "type": "package",
-      "path": "opentelemetry/1.1.0",
+      "path": "opentelemetry/1.1.0-beta1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2835,14 +2835,14 @@
         "lib/netstandard2.0/OpenTelemetry.dll",
         "lib/netstandard2.0/OpenTelemetry.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.1.1.0.nupkg.sha512",
+        "opentelemetry.1.1.0-beta1.nupkg.sha512",
         "opentelemetry.nuspec"
       ]
     },
-    "OpenTelemetry.Api/1.1.0": {
-      "sha512": "K4MkthPTNVAatWSldmRHq0oGB9Z9YZYNQg1xjualeG9yJTghUj18RjReNPabCmEqOpRmFI9mO6KS4L8QKFQKUg==",
+    "OpenTelemetry.Api/1.1.0-beta1": {
+      "sha512": "eNh4FOCWMrsRrJuxulqTYh9TEQ0sM2eaF9Byke8e4ot2AA6LQrW+zwkHrVWUSzmCUE+H0bIDBg6CzgdYMt2Wzg==",
       "type": "package",
-      "path": "opentelemetry.api/1.1.0",
+      "path": "opentelemetry.api/1.1.0-beta1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2851,7 +2851,7 @@
         "lib/netstandard2.0/OpenTelemetry.Api.dll",
         "lib/netstandard2.0/OpenTelemetry.Api.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.api.1.1.0.nupkg.sha512",
+        "opentelemetry.api.1.1.0-beta1.nupkg.sha512",
         "opentelemetry.api.nuspec"
       ]
     },
@@ -6116,12 +6116,12 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Autofac >= 6.2.0",
+      "Autofac >= 6.3.0",
       "Grpc.Core.Api >= 2.41.0",
       "Grpc.Net.Client >= 2.40.0",
       "JetBrains.Annotations >= 2021.2.0",
       "MyJetWallet.Sdk.Grpc >= 1.0.5",
-      "MyJetWallet.Sdk.GrpcMetrics >= 2.0.1",
+      "MyJetWallet.Sdk.GrpcMetrics >= 2.0.2",
       "MyJetWallet.Sdk.NoSql >= 1.2.0",
       "MyNoSqlServer.DataReader >= 1.3.1",
       "Service.NewsRepository.Domain.Models >= 1.0.0",
@@ -6178,7 +6178,7 @@
         "dependencies": {
           "Autofac": {
             "target": "Package",
-            "version": "[6.2.0, )"
+            "version": "[6.3.0, )"
           },
           "Grpc.Core.Api": {
             "target": "Package",
@@ -6198,7 +6198,7 @@
           },
           "MyJetWallet.Sdk.GrpcMetrics": {
             "target": "Package",
-            "version": "[2.0.1, )"
+            "version": "[2.0.2, )"
           },
           "MyJetWallet.Sdk.NoSql": {
             "target": "Package",

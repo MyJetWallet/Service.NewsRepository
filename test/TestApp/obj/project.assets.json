@@ -375,18 +375,18 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Http/3.0.3": {
+      "Microsoft.Extensions.Http/3.1.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.3",
-          "Microsoft.Extensions.Logging": "3.0.3",
-          "Microsoft.Extensions.Options": "3.0.3"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.9",
+          "Microsoft.Extensions.Logging": "3.1.9",
+          "Microsoft.Extensions.Options": "3.1.9"
         },
         "compile": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Http.dll": {}
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Http.dll": {}
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/5.0.0": {
@@ -534,14 +534,14 @@
           "lib/net5.0/MyJetWallet.Sdk.Grpc.dll": {}
         }
       },
-      "MyJetWallet.Sdk.GrpcMetrics/2.0.0": {
+      "MyJetWallet.Sdk.GrpcMetrics/2.0.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.0.1",
+          "OpenTelemetry": "1.1.0",
           "System.Diagnostics.DiagnosticSource": "5.0.1",
-          "System.Text.Json": "5.0.1",
-          "prometheus-net": "4.1.1",
-          "protobuf-net.Grpc": "1.0.147"
+          "System.Text.Json": "5.0.2",
+          "prometheus-net": "5.0.1",
+          "protobuf-net.Grpc": "1.0.152"
         },
         "compile": {
           "lib/netstandard2.0/MyJetWallet.Sdk.GrpcMetrics.dll": {}
@@ -674,12 +674,12 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "OpenTelemetry/1.1.0-beta1": {
+      "OpenTelemetry/1.1.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "[2.1.0, 6.0.0)",
           "Microsoft.Extensions.Logging.Configuration": "[2.1.0, 6.0.0)",
-          "OpenTelemetry.Api": "1.1.0-beta1",
+          "OpenTelemetry.Api": "1.1.0",
           "System.Collections.Immutable": "1.4.0",
           "System.Reflection.Emit.Lightweight": "4.7.0"
         },
@@ -690,7 +690,7 @@
           "lib/netstandard2.0/OpenTelemetry.dll": {}
         }
       },
-      "OpenTelemetry.Api/1.1.0-beta1": {
+      "OpenTelemetry.Api/1.1.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "5.0.1",
@@ -767,8 +767,11 @@
           "lib/netstandard2.0/OpenTelemetry.Instrumentation.Http.dll": {}
         }
       },
-      "prometheus-net/4.1.1": {
+      "prometheus-net/5.0.1": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "3.1.9"
+        },
         "compile": {
           "lib/netcoreapp2.1/Prometheus.NetCore.dll": {},
           "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {}
@@ -1724,7 +1727,7 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "System.Text.Json/5.0.1": {
+      "System.Text.Json/5.0.2": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
@@ -1804,7 +1807,7 @@
           "Grpc.Net.Client": "2.40.0",
           "JetBrains.Annotations": "2021.2.0",
           "MyJetWallet.Sdk.Grpc": "1.0.5",
-          "MyJetWallet.Sdk.GrpcMetrics": "2.0.0",
+          "MyJetWallet.Sdk.GrpcMetrics": "2.0.1",
           "MyJetWallet.Sdk.NoSql": "1.2.0",
           "MyNoSqlServer.DataReader": "1.3.1",
           "System.ServiceModel.Primitives": "4.8.1",
@@ -2479,19 +2482,19 @@
         "microsoft.extensions.hosting.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Http/3.0.3": {
-      "sha512": "dcyB8szIcSynjVZRuFgqkZpPgTc5zeRSj1HMXSmNqWbHYKiPYJl8ZQgBHz6wmZNSUUNGpCs5uxUg8DZHHDC1Ew==",
+    "Microsoft.Extensions.Http/3.1.9": {
+      "sha512": "sRyrkBJGS+8ucKak+RmAPkAiIm6amA5ztpIkp0zrPn5+kDX2j8XJdRARr4Eh003RIGQxzvNGQ+j/voAhlPoXyw==",
       "type": "package",
-      "path": "microsoft.extensions.http/3.0.3",
+      "path": "microsoft.extensions.http/3.1.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Http.dll",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Http.xml",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Http.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Http.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Http.xml",
-        "microsoft.extensions.http.3.0.3.nupkg.sha512",
+        "microsoft.extensions.http.3.1.9.nupkg.sha512",
         "microsoft.extensions.http.nuspec"
       ]
     },
@@ -2706,15 +2709,15 @@
         "myjetwallet.sdk.grpc.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.GrpcMetrics/2.0.0": {
-      "sha512": "6Lt09KThD6/z8S+NxN8GDpBPglussfPDTXau/GfQJZZRNMBdnFWOncZgWBaviEBdehioNF0llskOIfY3mNFTDg==",
+    "MyJetWallet.Sdk.GrpcMetrics/2.0.1": {
+      "sha512": "hK0c76soGUyYkIfZ+5DOoZ4QZ7hdu5Ov+B2za6EHJToMyFHDEqneRCzrdGPz5KopIvyXNzulAJoDh8XXAaA7rg==",
       "type": "package",
-      "path": "myjetwallet.sdk.grpcmetrics/2.0.0",
+      "path": "myjetwallet.sdk.grpcmetrics/2.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/MyJetWallet.Sdk.GrpcMetrics.dll",
-        "myjetwallet.sdk.grpcmetrics.2.0.0.nupkg.sha512",
+        "myjetwallet.sdk.grpcmetrics.2.0.1.nupkg.sha512",
         "myjetwallet.sdk.grpcmetrics.nuspec"
       ]
     },
@@ -2838,10 +2841,10 @@
         "packageIcon.png"
       ]
     },
-    "OpenTelemetry/1.1.0-beta1": {
-      "sha512": "Cpaah0FksFQft8yTfvv4AUuzwBJiw7auu8QQ1gD7nJW6Hfrm2FtzEhpECOSQ7t40tGm6Gwz5iYWIj0d8dnBYvw==",
+    "OpenTelemetry/1.1.0": {
+      "sha512": "vNZI1Mh00DfZpcY/Fq/xWlM6QK8L+9H6whSu+kwlBxXLIB1MPJz7q6VgOoF6nJEMGAzk5Km8SY27rKOwEAjnFg==",
       "type": "package",
-      "path": "opentelemetry/1.1.0-beta1",
+      "path": "opentelemetry/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2854,14 +2857,14 @@
         "lib/netstandard2.0/OpenTelemetry.dll",
         "lib/netstandard2.0/OpenTelemetry.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.1.1.0-beta1.nupkg.sha512",
+        "opentelemetry.1.1.0.nupkg.sha512",
         "opentelemetry.nuspec"
       ]
     },
-    "OpenTelemetry.Api/1.1.0-beta1": {
-      "sha512": "eNh4FOCWMrsRrJuxulqTYh9TEQ0sM2eaF9Byke8e4ot2AA6LQrW+zwkHrVWUSzmCUE+H0bIDBg6CzgdYMt2Wzg==",
+    "OpenTelemetry.Api/1.1.0": {
+      "sha512": "K4MkthPTNVAatWSldmRHq0oGB9Z9YZYNQg1xjualeG9yJTghUj18RjReNPabCmEqOpRmFI9mO6KS4L8QKFQKUg==",
       "type": "package",
-      "path": "opentelemetry.api/1.1.0-beta1",
+      "path": "opentelemetry.api/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2870,7 +2873,7 @@
         "lib/netstandard2.0/OpenTelemetry.Api.dll",
         "lib/netstandard2.0/OpenTelemetry.Api.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.api.1.1.0-beta1.nupkg.sha512",
+        "opentelemetry.api.1.1.0.nupkg.sha512",
         "opentelemetry.api.nuspec"
       ]
     },
@@ -2954,10 +2957,10 @@
         "opentelemetry.instrumentation.http.nuspec"
       ]
     },
-    "prometheus-net/4.1.1": {
-      "sha512": "A+z2qxPv+tJOl78yUaQEzyDMap0sjjKL+WVUa+JzXyRQ1ZPtNeDf6qXD+w7tYkVd88GQtnoJ7xDaxluiOM6S8Q==",
+    "prometheus-net/5.0.1": {
+      "sha512": "tg+vGeKCUqaWPzHAuKI87/rqQD4RKjb/jlRqSPaAdGRFd/SFDFRHPE8Rcy5Rx2f4xqdR+s3qTQ/0Y/IHbI3D1Q==",
       "type": "package",
-      "path": "prometheus-net/4.1.1",
+      "path": "prometheus-net/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2977,7 +2980,7 @@
         "lib/netstandard2.0/Prometheus.NetStandard.dll",
         "lib/netstandard2.0/Prometheus.NetStandard.pdb",
         "lib/netstandard2.0/Prometheus.NetStandard.xml",
-        "prometheus-net.4.1.1.nupkg.sha512",
+        "prometheus-net.5.0.1.nupkg.sha512",
         "prometheus-net.nuspec"
       ]
     },
@@ -5848,10 +5851,10 @@
         "version.txt"
       ]
     },
-    "System.Text.Json/5.0.1": {
-      "sha512": "/UM3UK1dXKl8Ybysg/21gM4S8DJgkR+yLU8JwqCVbuNqQNImelntgYFAN5QxR8sJJ1kMx//hOUdf0lltosi8cQ==",
+    "System.Text.Json/5.0.2": {
+      "sha512": "I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
       "type": "package",
-      "path": "system.text.json/5.0.1",
+      "path": "system.text.json/5.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5864,7 +5867,7 @@
         "lib/netcoreapp3.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.5.0.1.nupkg.sha512",
+        "system.text.json.5.0.2.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
