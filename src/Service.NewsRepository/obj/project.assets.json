@@ -634,7 +634,7 @@
           "lib/net5.0/MyJetWallet.Sdk.NoSql.dll": {}
         }
       },
-      "MyJetWallet.Sdk.Service/1.6.9": {
+      "MyJetWallet.Sdk.Service/1.6.10": {
         "type": "package",
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "7.1.0",
@@ -2935,15 +2935,15 @@
         "myjetwallet.sdk.nosql.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.Service/1.6.9": {
-      "sha512": "QoxN7nial0Ed63kwKhtAfLmbLE7tnyGx/F6YrDYu3K0Bs3d+52mHLq9qnNdb5OGbI4tYDAzcZatLFSh3BNFzkA==",
+    "MyJetWallet.Sdk.Service/1.6.10": {
+      "sha512": "ROWlVFmDU+kF5kbldReSwgblw7dgj+KX3TtdRt2Mmi9JFRU3M4D+0cJ7k/bot0oCO1bjdmQhXhDrBGh7699oyw==",
       "type": "package",
-      "path": "myjetwallet.sdk.service/1.6.9",
+      "path": "myjetwallet.sdk.service/1.6.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/MyJetWallet.Sdk.Service.dll",
-        "myjetwallet.sdk.service.1.6.9.nupkg.sha512",
+        "myjetwallet.sdk.service.1.6.10.nupkg.sha512",
         "myjetwallet.sdk.service.nuspec"
       ]
     },
@@ -6420,7 +6420,7 @@
       "MyJetWallet.Sdk.GrpcMetrics >= 2.0.2",
       "MyJetWallet.Sdk.GrpcSchema >= 1.0.6",
       "MyJetWallet.Sdk.NoSql >= 1.2.0",
-      "MyJetWallet.Sdk.Service >= 1.6.9",
+      "MyJetWallet.Sdk.Service >= 1.6.10",
       "MySettingsReader >= 1.2.1",
       "Newtonsoft.Json >= 13.0.1",
       "Service.NewsRepository.Domain >= 1.0.0",
@@ -6509,7 +6509,7 @@
           },
           "MyJetWallet.Sdk.Service": {
             "target": "Package",
-            "version": "[1.6.9, )"
+            "version": "[1.6.10, )"
           },
           "MySettingsReader": {
             "target": "Package",

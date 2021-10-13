@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o/JgvNfc48l7vaayySikYi224K1r2tBJg2x6mSErOZQsCk4qlDwM1DyU4qV/sx9ttGv3Tdk9nBgHaJsBixhYxw==",
+  "dgSpecHash": "gOiqv9Fa0eLYk/2WJtdukcCRiKLw71l9IcR2ml6Gahs1E8ELgZdO4cQtSqbiFzXWDPUN01RueSdtPqQ2HUebPg==",
   "success": true,
   "projectFilePath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
   "expectedPackageFiles": [
@@ -52,7 +52,7 @@
     "/home/runner/.nuget/packages/myjetwallet.sdk.grpcmetrics/2.0.2/myjetwallet.sdk.grpcmetrics.2.0.2.nupkg.sha512",
     "/home/runner/.nuget/packages/myjetwallet.sdk.grpcschema/1.0.6/myjetwallet.sdk.grpcschema.1.0.6.nupkg.sha512",
     "/home/runner/.nuget/packages/myjetwallet.sdk.nosql/1.2.0/myjetwallet.sdk.nosql.1.2.0.nupkg.sha512",
-    "/home/runner/.nuget/packages/myjetwallet.sdk.service/1.6.9/myjetwallet.sdk.service.1.6.9.nupkg.sha512",
+    "/home/runner/.nuget/packages/myjetwallet.sdk.service/1.6.10/myjetwallet.sdk.service.1.6.10.nupkg.sha512",
     "/home/runner/.nuget/packages/myjetyamlparser/1.1.1/myjetyamlparser.1.1.1.nupkg.sha512",
     "/home/runner/.nuget/packages/mynosqlserver.datareader/1.3.1/mynosqlserver.datareader.1.3.1.nupkg.sha512",
     "/home/runner/.nuget/packages/mynosqlserver.datawriter/1.3.1/mynosqlserver.datawriter.1.3.1.nupkg.sha512",

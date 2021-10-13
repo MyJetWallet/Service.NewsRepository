@@ -251,7 +251,7 @@
             },
             "MyJetWallet.Sdk.Service": {
               "target": "Package",
-              "version": "[1.6.9, )"
+              "version": "[1.6.10, )"
             },
             "MySettingsReader": {
               "target": "Package",
