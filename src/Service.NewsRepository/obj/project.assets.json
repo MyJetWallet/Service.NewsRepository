@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "Autofac/6.2.0": {
+      "Autofac/6.3.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "4.7.1"
@@ -619,11 +619,11 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "MyJetWallet.Sdk.NoSql/1.2.0": {
+      "MyJetWallet.Sdk.NoSql/1.3.2": {
         "type": "package",
         "dependencies": {
-          "Autofac": "6.2.0",
-          "MyJetWallet.Sdk.Service": "1.5.5",
+          "Autofac": "6.3.0",
+          "MyJetWallet.Sdk.Service": "1.6.10",
           "MyNoSqlServer.DataReader": "1.3.1",
           "MyNoSqlServer.DataWriter": "1.3.1"
         },
@@ -1984,14 +1984,14 @@
     }
   },
   "libraries": {
-    "Autofac/6.2.0": {
-      "sha512": "BX8IM0GANE38uSr4QwXL4PgA8vWWYt2P5cZzipn/vDnf0fDbPSGKSHEroJ09rB7ANxdyf7MdEgVs+pvL8kwYCg==",
+    "Autofac/6.3.0": {
+      "sha512": "gO4bli0N8tDnBHzbYktcnbXlmN6T+IT5W+FUGgCUaM6pwwHXIxOPoUGvfGum7sZpJJgfQNgjFFv80ZPuARgRdA==",
       "type": "package",
-      "path": "autofac/6.2.0",
+      "path": "autofac/6.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "autofac.6.2.0.nupkg.sha512",
+        "autofac.6.3.0.nupkg.sha512",
         "autofac.nuspec",
         "icon.png",
         "lib/net5.0/Autofac.dll",
@@ -2923,15 +2923,15 @@
         "myjetwallet.sdk.grpcschema.nuspec"
       ]
     },
-    "MyJetWallet.Sdk.NoSql/1.2.0": {
-      "sha512": "KYiRmyOflkvele6PrxvP8saRkWVztIKTh7OQMJocQryqnZ16NZFjsJTdnscfnAUEoianrP5BaQ8IIueccPX+5w==",
+    "MyJetWallet.Sdk.NoSql/1.3.2": {
+      "sha512": "yKxb4hQpyGp/Xk4u7DeigOe1lff90GuO8byoPGj1z/1CbcxjK6Zid2bQj8asoKH1ahE5CkoNv50YaZxNGBohZw==",
       "type": "package",
-      "path": "myjetwallet.sdk.nosql/1.2.0",
+      "path": "myjetwallet.sdk.nosql/1.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/MyJetWallet.Sdk.NoSql.dll",
-        "myjetwallet.sdk.nosql.1.2.0.nupkg.sha512",
+        "myjetwallet.sdk.nosql.1.3.2.nupkg.sha512",
         "myjetwallet.sdk.nosql.nuspec"
       ]
     },
@@ -6419,7 +6419,7 @@
       "Microsoft.Extensions.Logging >= 5.0.0",
       "MyJetWallet.Sdk.GrpcMetrics >= 2.0.2",
       "MyJetWallet.Sdk.GrpcSchema >= 1.0.6",
-      "MyJetWallet.Sdk.NoSql >= 1.2.0",
+      "MyJetWallet.Sdk.NoSql >= 1.3.2",
       "MyJetWallet.Sdk.Service >= 1.6.10",
       "MySettingsReader >= 1.2.1",
       "Newtonsoft.Json >= 13.0.1",
@@ -6505,7 +6505,7 @@
           },
           "MyJetWallet.Sdk.NoSql": {
             "target": "Package",
-            "version": "[1.2.0, )"
+            "version": "[1.3.2, )"
           },
           "MyJetWallet.Sdk.Service": {
             "target": "Package",

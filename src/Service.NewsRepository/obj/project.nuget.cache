@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gOiqv9Fa0eLYk/2WJtdukcCRiKLw71l9IcR2ml6Gahs1E8ELgZdO4cQtSqbiFzXWDPUN01RueSdtPqQ2HUebPg==",
+  "dgSpecHash": "bRHUPk1Urf9Q92MVzJbMu72HdniAHPqIJuoUsTPWp3hTpIsWb1JPVAJ+6UjFDCi1Irdys22Y2PwBh6rkovAyHQ==",
   "success": true,
   "projectFilePath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository/Service.NewsRepository.csproj",
   "expectedPackageFiles": [
-    "/home/runner/.nuget/packages/autofac/6.2.0/autofac.6.2.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/autofac/6.3.0/autofac.6.3.0.nupkg.sha512",
     "/home/runner/.nuget/packages/autofac.extensions.dependencyinjection/7.1.0/autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "/home/runner/.nuget/packages/destructurama.attributed/3.0.0/destructurama.attributed.3.0.0.nupkg.sha512",
     "/home/runner/.nuget/packages/dotnetcoredecorators/1.0.21/dotnetcoredecorators.1.0.21.nupkg.sha512",
@@ -51,7 +51,7 @@
     "/home/runner/.nuget/packages/myjetwallet.sdk.grpc/1.0.5/myjetwallet.sdk.grpc.1.0.5.nupkg.sha512",
     "/home/runner/.nuget/packages/myjetwallet.sdk.grpcmetrics/2.0.2/myjetwallet.sdk.grpcmetrics.2.0.2.nupkg.sha512",
     "/home/runner/.nuget/packages/myjetwallet.sdk.grpcschema/1.0.6/myjetwallet.sdk.grpcschema.1.0.6.nupkg.sha512",
-    "/home/runner/.nuget/packages/myjetwallet.sdk.nosql/1.2.0/myjetwallet.sdk.nosql.1.2.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/myjetwallet.sdk.nosql/1.3.2/myjetwallet.sdk.nosql.1.3.2.nupkg.sha512",
     "/home/runner/.nuget/packages/myjetwallet.sdk.service/1.6.10/myjetwallet.sdk.service.1.6.10.nupkg.sha512",
     "/home/runner/.nuget/packages/myjetyamlparser/1.1.1/myjetyamlparser.1.1.1.nupkg.sha512",
     "/home/runner/.nuget/packages/mynosqlserver.datareader/1.3.1/mynosqlserver.datareader.1.3.1.nupkg.sha512",
