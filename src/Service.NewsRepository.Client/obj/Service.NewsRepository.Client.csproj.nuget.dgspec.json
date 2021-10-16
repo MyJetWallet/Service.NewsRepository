@@ -73,11 +73,11 @@
             },
             "MyJetWallet.Sdk.NoSql": {
               "target": "Package",
-              "version": "[1.3.2, )"
+              "version": "[1.4.0, )"
             },
             "MyNoSqlServer.DataReader": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.4.2, )"
             },
             "System.ServiceModel.Primitives": {
               "target": "Package",
