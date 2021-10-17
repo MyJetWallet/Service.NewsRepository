@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TCp2cGOnxBBViSbPQkYpvlstGR+VfiFhQ/6yx/V7WeQeDfJe0UV/NBY9oqVK/+F4uiL/75PbjQ4Rsx1zWjIYJw==",
+  "dgSpecHash": "KP+vJ8mjrVN8fshlFSUVMU2Dd/mVLQYL/akkd41IpUd2/cveqDf7NNG41fBJ2FGfYSAm3ixFx1fRTAPGym6NNQ==",
   "success": true,
   "projectFilePath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Client/Service.NewsRepository.Client.csproj",
   "expectedPackageFiles": [

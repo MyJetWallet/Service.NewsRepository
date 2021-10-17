@@ -1807,7 +1807,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "MyNoSqlServer.DataWriter": "1.3.1"
+          "MyNoSqlServer.DataWriter": "1.4.2"
         },
         "compile": {
           "bin/placeholder/Service.NewsRepository.Domain.Models.dll": {}
