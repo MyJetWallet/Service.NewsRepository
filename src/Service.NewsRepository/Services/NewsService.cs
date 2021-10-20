@@ -100,8 +100,16 @@ namespace Service.NewsRepository.Services
 
         public async Task DeleteNews(DeleteNewsRequest request)
         {
-            await _newsWriter.DeleteAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Ticker, request.Lang),
-                NewsNoSqlEntity.GenerateRowKey(request.Date));
+            _logger.LogInformation("DeleteNews receive message: {requestJson}", JsonConvert.SerializeObject(request));
+            try
+            {
+                await _newsWriter.DeleteAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Ticker, request.Lang),
+                    NewsNoSqlEntity.GenerateRowKey(request.Date));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+            }
         }
     }
 }
