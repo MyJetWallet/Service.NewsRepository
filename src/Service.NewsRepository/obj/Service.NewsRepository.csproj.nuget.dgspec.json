@@ -227,7 +227,7 @@
             },
             "JetBrains.Annotations": {
               "target": "Package",
-              "version": "[2021.2.0, )"
+              "version": "[2021.3.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

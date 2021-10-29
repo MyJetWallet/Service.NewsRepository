@@ -235,7 +235,7 @@
           "build/Grpc.Tools.targets": {}
         }
       },
-      "JetBrains.Annotations/2021.2.0": {
+      "JetBrains.Annotations/2021.3.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
@@ -2359,15 +2359,15 @@
         "tools/windows_x86/protoc.exe"
       ]
     },
-    "JetBrains.Annotations/2021.2.0": {
-      "sha512": "kKSyoVfndMriKHLfYGmr0uzQuI4jcc3TKGyww7buJFCYeHb/X0kodYBPL7n9454q7v6ASiRmDgpPGaDGerg/Hg==",
+    "JetBrains.Annotations/2021.3.0": {
+      "sha512": "Ddxjs5RRjf+c8m9m++WvhW1lz1bqNhsTjWvCLbQN9bvKbkJeR9MhtfNwKgBRRdG2yLHcXFr5Lf7fsvvkiPaDRg==",
       "type": "package",
-      "path": "jetbrains.annotations/2021.2.0",
+      "path": "jetbrains.annotations/2021.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "jetbrains.annotations.2021.2.0.nupkg.sha512",
+        "jetbrains.annotations.2021.3.0.nupkg.sha512",
         "jetbrains.annotations.nuspec",
         "lib/net20/JetBrains.Annotations.dll",
         "lib/net20/JetBrains.Annotations.xml",
@@ -6367,7 +6367,7 @@
     "net5.0": [
       "Autofac.Extensions.DependencyInjection >= 7.1.0",
       "Grpc.AspNetCore >= 2.40.0",
-      "JetBrains.Annotations >= 2021.2.0",
+      "JetBrains.Annotations >= 2021.3.0",
       "Microsoft.Extensions.Configuration >= 5.0.0",
       "Microsoft.Extensions.Logging >= 5.0.0",
       "MyJetWallet.Sdk.GrpcMetrics >= 2.0.2",
@@ -6438,7 +6438,7 @@
           },
           "JetBrains.Annotations": {
             "target": "Package",
-            "version": "[2021.2.0, )"
+            "version": "[2021.3.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
