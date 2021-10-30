@@ -195,7 +195,7 @@
           "build/_._": {}
         }
       },
-      "JetBrains.Annotations/2021.2.0": {
+      "JetBrains.Annotations/2021.3.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
@@ -1810,7 +1810,7 @@
           "Autofac": "6.3.0",
           "Grpc.Core.Api": "2.41.1",
           "Grpc.Net.Client": "2.40.0",
-          "JetBrains.Annotations": "2021.2.0",
+          "JetBrains.Annotations": "2021.3.0",
           "MyJetWallet.Sdk.Grpc": "1.0.5",
           "MyJetWallet.Sdk.GrpcMetrics": "2.0.2",
           "MyJetWallet.Sdk.NoSql": "1.4.0",
@@ -2206,15 +2206,15 @@
         "tools/windows_x86/protoc.exe"
       ]
     },
-    "JetBrains.Annotations/2021.2.0": {
-      "sha512": "kKSyoVfndMriKHLfYGmr0uzQuI4jcc3TKGyww7buJFCYeHb/X0kodYBPL7n9454q7v6ASiRmDgpPGaDGerg/Hg==",
+    "JetBrains.Annotations/2021.3.0": {
+      "sha512": "Ddxjs5RRjf+c8m9m++WvhW1lz1bqNhsTjWvCLbQN9bvKbkJeR9MhtfNwKgBRRdG2yLHcXFr5Lf7fsvvkiPaDRg==",
       "type": "package",
-      "path": "jetbrains.annotations/2021.2.0",
+      "path": "jetbrains.annotations/2021.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "jetbrains.annotations.2021.2.0.nupkg.sha512",
+        "jetbrains.annotations.2021.3.0.nupkg.sha512",
         "jetbrains.annotations.nuspec",
         "lib/net20/JetBrains.Annotations.dll",
         "lib/net20/JetBrains.Annotations.xml",
