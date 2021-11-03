@@ -1823,7 +1823,10 @@
         },
         "runtime": {
           "bin/placeholder/MyJetWallet.Service.NewsRepository.Client.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Service.NewsRepository.Domain.Models/1.0.0": {
         "type": "project",
@@ -6119,35 +6122,36 @@
     ]
   },
   "packageFolders": {
-    "/home/runner/.nuget/packages/": {}
+    "/Users/alexey/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/TestApp/TestApp.csproj",
+      "projectUniqueName": "/Users/alexey/git/jetwallet/Service.NewsRepository/test/TestApp/TestApp.csproj",
       "projectName": "TestApp",
-      "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/TestApp/TestApp.csproj",
-      "packagesPath": "/home/runner/.nuget/packages/",
-      "outputPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/TestApp/obj/",
+      "projectPath": "/Users/alexey/git/jetwallet/Service.NewsRepository/test/TestApp/TestApp.csproj",
+      "packagesPath": "/Users/alexey/.nuget/packages/",
+      "outputPath": "/Users/alexey/git/jetwallet/Service.NewsRepository/test/TestApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/runner/.nuget/NuGet/NuGet.Config"
+        "/Users/alexey/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.pkg.github.com/MyJetWallet/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Client/Service.NewsRepository.Client.csproj": {
-              "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Client/Service.NewsRepository.Client.csproj"
+            "/Users/alexey/git/jetwallet/Service.NewsRepository/src/Service.NewsRepository.Client/Service.NewsRepository.Client.csproj": {
+              "projectPath": "/Users/alexey/git/jetwallet/Service.NewsRepository/src/Service.NewsRepository.Client/Service.NewsRepository.Client.csproj"
             },
-            "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
-              "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj"
+            "/Users/alexey/git/jetwallet/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj": {
+              "projectPath": "/Users/alexey/git/jetwallet/Service.NewsRepository/src/Service.NewsRepository.Grpc/Service.NewsRepository.Grpc.csproj"
             }
           }
         }
@@ -6182,11 +6186,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

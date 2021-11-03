@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
+using MyNoSqlServer.DataReader;
+using MyNoSqlServer.DataWriter;
 using ProtoBuf.Grpc.Client;
 using Service.NewsRepository.Client;
+using Service.NewsRepository.Domain.Models.NoSql;
 using Service.NewsRepository.Grpc.Models;
 
 namespace TestApp
@@ -10,20 +14,28 @@ namespace TestApp
     {
         static async Task Main(string[] args)
         {
-            GrpcClientFactory.AllowUnencryptedHttp2 = true;
+            var writer =
+                new MyNoSqlServerDataWriter<NewsNoSqlEntity>(() => "http://192.168.70.80:5123",
+                    NewsNoSqlEntity.TableName, true);
+            
+            
 
-            Console.Write("Press enter to start");
-            Console.ReadLine();
 
 
-            var factory = new NewsRepositoryClientFactory("http://localhost:5001");
-            // var client = factory.GetHelloService();
-            //
-            // var resp = await  client.GetAllNews(new NewsRequest(){Name = "Alex"});
-            // Console.WriteLine(resp?.Message);
+            var data = writer.GetAsync(NewsNoSqlEntity.GeneratePartitionKey("BTC", "en")).GetAwaiter().GetResult();
+            
+            Console.WriteLine($"Data count: {data.Count()}");
+
+            var index = 0;
+            foreach (var entity in data.OrderBy(e => e.RowKey))
+            {
+                Console.WriteLine($"  {++index}: {entity.News.Topic}");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
 
             Console.WriteLine("End");
-            Console.ReadLine();
         }
     }
 }

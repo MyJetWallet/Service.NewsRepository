@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj": {}
+    "/Users/alexey/git/jetwallet/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj": {}
   },
   "projects": {
-    "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj": {
+    "/Users/alexey/git/jetwallet/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj",
+        "projectUniqueName": "/Users/alexey/git/jetwallet/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj",
         "projectName": "Service.NewsRepository.Tests",
-        "projectPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/Service.NewsRepository/Service.NewsRepository/test/Service.NewsRepository.Tests/obj/",
+        "projectPath": "/Users/alexey/git/jetwallet/Service.NewsRepository/test/Service.NewsRepository.Tests/Service.NewsRepository.Tests.csproj",
+        "packagesPath": "/Users/alexey/.nuget/packages/",
+        "outputPath": "/Users/alexey/git/jetwallet/Service.NewsRepository/test/Service.NewsRepository.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "/Users/alexey/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/MyJetWallet/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -66,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }
