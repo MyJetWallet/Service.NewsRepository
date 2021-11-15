@@ -14,6 +14,8 @@ namespace TestApp
     {
         static async Task Main(string[] args)
         {
+            await Task.Delay(10);
+            
             var writer =
                 new MyNoSqlServerDataWriter<NewsNoSqlEntity>(() => "http://192.168.70.80:5123",
                     NewsNoSqlEntity.TableName, true);
