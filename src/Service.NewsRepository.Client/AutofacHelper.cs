@@ -21,5 +21,12 @@ namespace Service.NewsRepository.Client
         {
             builder.RegisterMyNoSqlReader<NewsNoSqlEntity>(myNoSqlClient, NewsNoSqlEntity.TableName);
         }
+
+        public static void RegisterNewsClient(this ContainerBuilder builder, MyNoSqlTcpClient myNoSqlClient)
+        {
+            var reader = builder.RegisterMyNoSqlReader<NewsNoSqlEntity>(myNoSqlClient, NewsNoSqlEntity.TableName);
+            var client = new NewsClient(reader);
+            builder.RegisterInstance(client).As<INewsClient>().SingleInstance();
+        }
     }
 }

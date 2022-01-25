@@ -27,9 +27,26 @@ namespace Service.NewsRepository.Services
 
         public async Task<NewsListResponse> GetNews(GetNewsRequest request)
         {
-            var data = await _newsWriter.GetAsync();
-            
-            var news = data.Select(n => n.News);
+            IEnumerable<News> news = null;
+
+            if (string.IsNullOrWhiteSpace(request.Lang))
+                request.Lang = "en";
+
+            request.Lang = request.Lang.ToLower();
+
+            if (!string.IsNullOrWhiteSpace(request.Ticker))
+            {
+                var data = await _newsWriter.GetAsync(NewsNoSqlEntity.GeneratePartitionKey(request.Ticker, request.Lang));
+                news = data.Select(e => e.News);
+            }
+            else
+            {
+                var data = await _newsWriter.GetAsync();
+                news = data
+                    .Select(e => e.News)
+                    .GroupBy(e => e.UrlAddress)
+                    .Select(e => e.First());
+            }
 
             if (request.LastDate != DateTime.MinValue)
             {
@@ -42,12 +59,6 @@ namespace Service.NewsRepository.Services
                 news = news.OrderByDescending(e=> e.Timestamp)
                     .Take(request.BatchSize);
             }
-
-            if (!string.IsNullOrWhiteSpace(request.Ticker))
-                news = news.Where(t=>!t.AssociatedAssets.Any() || t.AssociatedAssets.Contains(request.Ticker.ToUpper()));
-            
-            if (!string.IsNullOrWhiteSpace(request.Lang))
-               news = news.Where(t => t.Lang == request.Lang.ToLower());
 
             return new NewsListResponse()
             {
