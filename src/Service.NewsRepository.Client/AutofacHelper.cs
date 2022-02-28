@@ -17,12 +17,12 @@ namespace Service.NewsRepository.Client
             builder.RegisterInstance(factory.GetNewsService()).As<INewsService>().SingleInstance();
         }
         
-        public static void RegisterNewsRepositoryNoSqlReader(this ContainerBuilder builder, MyNoSqlTcpClient myNoSqlClient)
+        public static void RegisterNewsRepositoryNoSqlReader(this ContainerBuilder builder, IMyNoSqlSubscriber myNoSqlClient)
         {
             builder.RegisterMyNoSqlReader<NewsNoSqlEntity>(myNoSqlClient, NewsNoSqlEntity.TableName);
         }
 
-        public static void RegisterNewsClient(this ContainerBuilder builder, MyNoSqlTcpClient myNoSqlClient)
+        public static void RegisterNewsClient(this ContainerBuilder builder, IMyNoSqlSubscriber myNoSqlClient)
         {
             var reader = builder.RegisterMyNoSqlReader<NewsNoSqlEntity>(myNoSqlClient, NewsNoSqlEntity.TableName);
             var client = new NewsClient(reader);
